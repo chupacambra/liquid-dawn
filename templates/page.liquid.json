@@ -33,7 +33,7 @@
     "6d89fd69-feb4-49e8-8b8c-119e97738d09": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2 style=\"text-align:center\" >{{page.title}}<\/h2>",
+        "custom_liquid": "<h3 style=\"text-align:center\" >{{page.title}}<\/h3>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -65,7 +65,39 @@
     "18adbeed-0453-4af8-a828-6bd62fa0af89": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if page.title ==\"Liquid\" %}\n<h2 style=\"text-align:center\" > YES the title is liquid <\/h2>\n{% endif %}",
+        "custom_liquid": "{% unless page.title ==\"liquid\" %}\n<h3 style=\"text-align:center\" > YES the title is liquid <\/h3>\n{% endunless %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "245c398c-3ecd-4a19-be43-0fb60db795e6": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16906140188985__245c398c-3ecd-4a19-be43-0fb60db795e6-16680927380b034934-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Filter<\/p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906140188985__245c398c-3ecd-4a19-be43-0fb60db795e6-16680927380b034934-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "feeaff93-64e8-4334-98fe-ab2c8cb6b05a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -77,6 +109,8 @@
     "66793876-82ae-445d-a6da-e4b1f9065dd0",
     "6d89fd69-feb4-49e8-8b8c-119e97738d09",
     "5b02059b-59e3-4304-95d0-2fa058001db2",
-    "18adbeed-0453-4af8-a828-6bd62fa0af89"
+    "18adbeed-0453-4af8-a828-6bd62fa0af89",
+    "245c398c-3ecd-4a19-be43-0fb60db795e6",
+    "feeaff93-64e8-4334-98fe-ab2c8cb6b05a"
   ]
 }
