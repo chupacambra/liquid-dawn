@@ -1,19 +1,19 @@
 {
   "sections": {
-    "18adbeed-0453-4af8-a828-6bd62fa0af89": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{{ page.title }}",
-        "color_scheme": "accent-2",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "18adbeed-0453-4af8-a828-6bd62fa0af89": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ page.title }}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "66793876-82ae-445d-a6da-e4b1f9065dd0": {
@@ -25,14 +25,37 @@
             "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1"
           }
+        }
+      },
+      "block_order": [
+        "template--16906140188985__66793876-82ae-445d-a6da-e4b1f9065dd0-1668086864e599b4d5-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "5b02059b-59e3-4304-95d0-2fa058001db2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16906140188985__5b02059b-59e3-4304-95d0-2fa058001db2-166809189725f1d458-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
         },
-        "template--16906140188985__66793876-82ae-445d-a6da-e4b1f9065dd0-1668086864e599b4d5-1": {
+        "template--16906140188985__5b02059b-59e3-4304-95d0-2fa058001db2-166809189725f1d458-1": {
           "type": "text",
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
-        "template--16906140188985__66793876-82ae-445d-a6da-e4b1f9065dd0-1668086864e599b4d5-2": {
+        "template--16906140188985__5b02059b-59e3-4304-95d0-2fa058001db2-166809189725f1d458-2": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
@@ -45,9 +68,9 @@
         }
       },
       "block_order": [
-        "template--16906140188985__66793876-82ae-445d-a6da-e4b1f9065dd0-1668086864e599b4d5-0",
-        "template--16906140188985__66793876-82ae-445d-a6da-e4b1f9065dd0-1668086864e599b4d5-1",
-        "template--16906140188985__66793876-82ae-445d-a6da-e4b1f9065dd0-1668086864e599b4d5-2"
+        "template--16906140188985__5b02059b-59e3-4304-95d0-2fa058001db2-166809189725f1d458-0",
+        "template--16906140188985__5b02059b-59e3-4304-95d0-2fa058001db2-166809189725f1d458-1",
+        "template--16906140188985__5b02059b-59e3-4304-95d0-2fa058001db2-166809189725f1d458-2"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -60,8 +83,9 @@
     }
   },
   "order": [
-    "18adbeed-0453-4af8-a828-6bd62fa0af89",
     "main",
-    "66793876-82ae-445d-a6da-e4b1f9065dd0"
+    "18adbeed-0453-4af8-a828-6bd62fa0af89",
+    "66793876-82ae-445d-a6da-e4b1f9065dd0",
+    "5b02059b-59e3-4304-95d0-2fa058001db2"
   ]
 }
