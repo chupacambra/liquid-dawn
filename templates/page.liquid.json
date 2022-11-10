@@ -10,7 +10,7 @@
     "18adbeed-0453-4af8-a828-6bd62fa0af89": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{  }}",
+        "custom_liquid": "{% if page.title ==\"Liquid\" %}\nYES the title is liquid \n{% endif %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
