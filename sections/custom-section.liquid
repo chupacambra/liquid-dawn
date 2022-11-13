@@ -1,21 +1,94 @@
-<h1>This works</h1>
+<h2>{{ section.settings.Mock-temp}}</h2>
+
+{% if section.settings.liquid-checkbox == true %}
+  <h3>Checkbox is checked</h3>
+{%else%}
+  <h3>Checkbox is NOT checked</h3>
+{% endif %}
+
+{% if settings.liquid-radio ==  "option-1" %}
+  <h3>Option 1 selected</h3>
+{% else%}
+  <h3>Option 2 selected</h3>
+{%endif%}
+
+<h2>Radio
+</h2>
+{{ section.settings.liquid-radio }}
+<h2>Range
+</h2>
+{{ section.settings.liquid-range }}
+<h2>Select
+</h2>
+{{ section.settings.liquid-select }}
 
 {% schema %}
   {
-    "name": "Mock-Template",
+    "name": "Mock- Template",
     "settings": [
       {
         "type": "text",
         "id": "Mock-temp",
         "label": "A reference for shopify Liquid "
+      },
+      {
+        "type": "checkbox",
+        "id": "liquid-checkbox",
+        "label": "Liquid Checkbox"
+      },
+      {
+        "id": "liquid-number",
+        "type": "number",
+        "label": "add a number "
+      },
+      {
+        "id": "liquid-radio",
+        "type": "radio",
+        "label": "add a radio button ",
+        "options": [
+          {
+            "value": "option-1",
+            "label": " Option 1"
+          }, {
+            "value": "option-2",
+            "label": " Option 2"
+          }
+        ]
+      }, {
+        "id": "liquid-range",
+        "type": "range",
+        "label": "Range",
+        "min": 3,
+        "max": 12,
+        "step": 3,
+        "default": 3
+      }, {
+        "id": "liquid-select",
+        "type": "select",
+        "label": "select",
+        "options": [
+          {
+            "value": "Canada",
+            "label": " Canada"
+          }, {
+            "value": "Greece ",
+            "label": " Greece"
+          }, {
+            "value": "Serbia",
+            "label": " Serbia"
+          }
+        ],
+        "default": "Serbia"
+      }, {
+        "type": "textarea",
+        "id": "liquid-textarea",
+        "label": "Text Area"
       }
     ],
     "presets": [
       {
         "name": "Mock-Template",
         "category": "Reference"
-
-
       }
     ]
   }

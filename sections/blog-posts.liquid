@@ -1,0 +1,39 @@
+{% assign blog = section.settings.new-blog %}
+
+{{ blog.articles_count }}
+
+{% unless blog.articles_count == 0 %}
+  {% for article in blog.articles %}
+    <img src="{{ article.image | img_url: 'medium' }}"/>
+    {{ article.title }}
+  {% endfor %}
+{% endunless %}
+
+{% schema %}
+  {
+    "name": "New Blog Posts",
+    "settings": [
+      {
+        "id": "posts-range",
+        "type": "range",
+        "label": "Range",
+        "min": 3,
+        "max": 12,
+        "step": 3,
+        "default": 3
+      }, {
+        "id": "new-blog",
+        "type": "blog",
+        "label": "Blog"
+
+      }
+    ],
+    "presets": [
+      {
+        "name": "New Blog Posts",
+        "category": "Posts"
+      }
+
+    ]
+  }
+{% endschema %}
