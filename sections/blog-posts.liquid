@@ -4,7 +4,6 @@
 
 {% unless blog.articles_count == 0 %}
   {% for article in blog.articles %}
-    <img src="{{ article.image | img_url: 'medium' }}"/>
     {{ article.title }}
   {% endfor %}
 {% endunless %}
