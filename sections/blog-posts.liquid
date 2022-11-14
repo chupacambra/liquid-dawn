@@ -3,9 +3,20 @@
 {{ blog.articles_count }}
 
 {% unless blog.articles_count == 0 %}
-  {% for article in blog.articles %}
-    {{ article.title }}
-  {% endfor %}
+  <div class="page-width">
+    {% for article in blog.articles limit:section.settings.posts-range %}
+      <div class="grid  ">
+        <a href='{{ article.url }}'>
+          <img src='{{ article.image | img_url: '500x' }}'/>
+        </a>
+        <a href="{{ article.url }}">
+          {{ article.title }}
+        </a>
+        <br>
+      </div>
+    {% endfor %}
+  </div>
+
 {% endunless %}
 
 {% schema %}
