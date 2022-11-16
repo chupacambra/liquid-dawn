@@ -3,7 +3,7 @@
     box-sizing: border-box;
     float: left;
     min-height: 1em;
-    padding-left: 2em;
+    padding-left: 5em;
     vertical-align: top;
     width: 25%;
   }
@@ -31,7 +31,7 @@
   {%- for product in collection.products -%}
     <li>
       <a class="product-card" href="{{ product.url | within: collection }}">
-        <img width="100" height="100" loading="lazy" src="{{ product.featured_image.src | image_url: '1024x' }}">
+        <img width="200" height="200" loading="lazy" src="{{ product.featured_image.src | image_url: '1024x' }}">
         {{ product.title }}
         <p>
           <span aria-hidden="true">—</span>
