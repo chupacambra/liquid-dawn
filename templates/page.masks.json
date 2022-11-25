@@ -69,10 +69,44 @@
         "heading": "How it works?",
         "subheading": ""
       }
+    },
+    "05838ccb-7db5-4a17-829c-3a43b5da045e": {
+      "type": "three-cols-mixed",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": "",
+        "image_main": "shopify:\/\/shop_images\/mask_two_74061893-c0e8-4b31-b9f4-2d3b3b106f60.png",
+        "image_small_one": "shopify:\/\/shop_images\/mask_one.png",
+        "image_small_two": "shopify:\/\/shop_images\/mask_one.png"
+      }
+    },
+    "0c290895-9116-4ffc-b966-eaeff0679ced": {
+      "type": "three-cols-standard",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": "",
+        "image_product1": "shopify:\/\/shop_images\/face_one.png",
+        "image_product2": "shopify:\/\/shop_images\/face_two.png"
+      }
+    },
+    "609ceb0f-562a-4573-b52d-b743992760d2": {
+      "type": "two-cols-full",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": "",
+        "image_variant1": "shopify:\/\/shop_images\/product_variant2.png",
+        "image_variant2": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png"
+      }
     }
   },
   "order": [
     "main",
-    "89820711-8f00-4aab-acf4-e82d77d0381f"
+    "89820711-8f00-4aab-acf4-e82d77d0381f",
+    "05838ccb-7db5-4a17-829c-3a43b5da045e",
+    "0c290895-9116-4ffc-b966-eaeff0679ced",
+    "609ceb0f-562a-4573-b52d-b743992760d2"
   ]
 }
