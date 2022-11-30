@@ -8,6 +8,14 @@
         "padding_bottom": 28
       }
     },
+    "b785b9c4-4efc-45c0-8380-944e8232503f": {
+      "type": "header-video-section",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": ""
+      }
+    },
     "89820711-8f00-4aab-acf4-e82d77d0381f": {
       "type": "five-cols-and-icons",
       "blocks": {
@@ -104,6 +112,7 @@
   },
   "order": [
     "main",
+    "b785b9c4-4efc-45c0-8380-944e8232503f",
     "89820711-8f00-4aab-acf4-e82d77d0381f",
     "05838ccb-7db5-4a17-829c-3a43b5da045e",
     "0c290895-9116-4ffc-b966-eaeff0679ced",
