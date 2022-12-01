@@ -1,27 +1,27 @@
 <style>
-  h1 {
-    font-size: 50px;
-    font-weight: 300;
+  h2 {
+
+    font-weight: ;
   }
   span {
     font-style: italic;
-    font-weight: 100;
+    font-weight: lighter;
 
   }
 </style>
 
 <section id="{{ section.id }}" style="background: linear-gradient(90deg, rgba(213,142,215,0.7189250700280112) 0%, rgba(204,194,157,1) 100%);">
 
-  <div class="container">
-    <div class="d-flex justify-content-center">
+  <div class="container ">
+    <div class="pt-40 pb-4   row d-flex justify-content-center">
       <div class="col-6">
-        <h1 style="ju" class="py-5">Omnilux redefined skincare with medical-grade
-          <span>RED</span>
-          light therapy proven to enhance your natural skin.</h1>
+        <h2>Omnilux redefined skincare with medical-grade
+          <span>LED</span>
+          light therapy proven to enhance your natural skin.</h2>
       </div>
     </div>
 
-    <div class="row justify-content-center py-5">
+    <div class="row justify-content-center pb-5">
       {% for block in section.blocks %}
         <div class="col-2 mx-2 text-center">
           {% if block.settings.image_url != '' %}

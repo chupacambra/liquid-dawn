@@ -1,4 +1,9 @@
 <style>
+  h1 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    margin-bottom: 3%;
+  }
 
   .btn {
     background-color: transparent;
@@ -20,11 +25,6 @@
     color: white;
   }
 
-  h1 {
-    font-size: 5.5rem;
-    font-weight: 300;
-    margin-bottom: 3%;
-  }
   h2 {
     font-size: 4rem;
     font-weight: 300;
@@ -40,35 +40,33 @@
     border-top: 1px solid black;
   }
   p {
-    margin-top: ;
+    margin-bottom: 5%;
     font-size: 2rem;
-  }
-  .custom-div {
-    margin-left: 10%;
   }
 </style>
 
-<section class="column-border" id="{{ section.id }}">
-  <div class="container-fluid">
-    <div class="row d-flex">
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
+<section class="column-border" id="{{ section.id }}" style="background: linear-gradient(90deg, rgba(245,211,189,1) 0%, rgba(255,255,255,1) 56%);">
+  <div class="container-xxl">
+    <div class="row d-flex my-5 g-5">
+      <div class="col-12 col-md-6 col-lg-4">
+        <h1>What’s your skin concern?
+        </h1>
+        <p>Find the right device with clinically-proven results for clearer and healthier skin.</p>
+      </div>
+      <div class="col-12 d-flex flex-column  justify-content-center col-md-6 col-lg-4 justify-content-center">
+        <img class="img-fluid" src="{{ section.settings.image_product1 | img_url: '2400x' }}">
         <div>
           <h2>“I want plumper, younger-looking skin”</h2>
           <p>Omnilux Contour™ red and near-infrared LED devices reduce fine lines, wrinkles, and the appearance of pigmentation and redness, while restoring a healthy, youthful glow.</p>
-          <div class="btn">SHOP ALL</div>
+          <div class="btn">Shop Contour</div>
         </div>
       </div>
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
-        <img class="img-fluid" loading="lazy" src="{{ section.settings.image_variant1 | image_url: width: 2400, height: 2400 }}">
-      </div>
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
-        <img class="img-fluid" loading="lazy" src="{{ section.settings.image_variant2 | image_url: width: 2400, height: 2400 }}">
-      </div>
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
-        <div class="custom-div">
-          <h2>Trusted and used by dermatologists worldwide</h2>
-          <p>Omnilux is recognized as the world leader in medical-grade LED light therapy devices. For the first time, there are now home-use devices based on Omnilux’s proven, professional-grade technology.</p>
-          <div class="btn">SHOP ALL</div>
+      <div class="col-12 d-flex flex-column  justify-content-center col-md-6 col-lg-4 justify-content-center">
+        <img class="img-fluid" src="{{ section.settings.image_product2 | img_url: '2400x' }}">
+        <div>
+          <h2>“I want plumper, younger-looking skin”</h2>
+          <p>The Omnilux CLEAR™ red and blue LED device significantly reduces or eliminates acne, blemishes, and inflammation, while softening the appearance of acne scarring.</p>
+          <div class="btn">Shop Clear</div>
         </div>
       </div>
     </div>
@@ -77,7 +75,7 @@
 
 {% schema %}
   {
-    "name": "two-cols-full",
+    "name": "three-cols-gradient",
     "settings": [
       {
         "type": "header",
@@ -103,17 +101,17 @@
         "info": "Leave empty to disable"
       }, {
         "type": "image_picker",
-        "id": "image_variant1",
+        "id": "image_product1",
         "label": "Image"
       }, {
         "type": "image_picker",
-        "id": "image_variant2",
+        "id": "image_product2",
         "label": "Image"
       }
     ],
     "presets": [
       {
-        "name": "two-cols-full",
+        "name": "three-cols-gradient",
         "category": "Content"
       }
     ]
