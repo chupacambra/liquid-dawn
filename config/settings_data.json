@@ -125,9 +125,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "30 DAYS MONEY BACK GUARANTEE",
               "text_alignment": "center",
-              "color_scheme": "background-1",
+              "color_scheme": "inverse",
               "link": ""
             }
           }
@@ -142,9 +142,9 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/Vanity_Fair_Logo.svg_622cd89c-52b5-48e4-83d3-4644b5e42c46.png",
+          "logo": "shopify:\/\/shop_images\/logo_transparent.png",
           "logo_width": 140,
-          "logo_position": "middle-left",
+          "logo_position": "middle-center",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
@@ -343,7 +343,7 @@
             "announcement-bar-0": {
               "type": "announcement",
               "settings": {
-                "text": "Welcome to our store",
+                "text": "30 DAYS MONEY BACK GUARANTEE",
                 "color_scheme": "background-1",
                 "link": ""
               }

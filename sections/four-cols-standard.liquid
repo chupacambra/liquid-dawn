@@ -1,27 +1,15 @@
-<style>
-  h1 {
-    font-size: 50px;
-    font-weight: 300;
-  }
-  span {
-    font-style: italic;
-    font-weight: 100;
+<section id="{{ section.id }}" class="column-border">
 
-  }
-</style>
-
-<section id="{{ section.id }}">
-
-  <div class="container">
+  <div class="container masks-section-padding ">
     <div class="d-flex justify-content-center">
-      <h4 style="ju" class="py-5">AWARDS AND RECOGNITIONS</h4>
+      <h4 class="pb-5">AWARDS AND RECOGNITIONS</h4>
     </div>
 
-    <div class="row justify-content-center py-5">
+    <div class="row justify-content-center">
       {% for block in section.blocks %}
         <div class="col-2 mx-2 text-center">
           {% if block.settings.image_url != '' %}
-            <img class="img-fluid" src="{{ block.settings.image_url | img_url: '100x' }}">
+            <img class="img-fluid" src="{{ block.settings.image_url | img_url: '200x' }}">
           {% endif %}
         </div>
       {% endfor %}

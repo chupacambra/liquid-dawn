@@ -81,7 +81,7 @@
     "05838ccb-7db5-4a17-829c-3a43b5da045e": {
       "type": "three-cols-mixed",
       "settings": {
-        "bg_color": "#eae6da",
+        "bg_color": "#e22120",
         "heading": "How it works?",
         "subheading": "",
         "image_main": "shopify:\/\/shop_images\/mask_two_74061893-c0e8-4b31-b9f4-2d3b3b106f60.png",
@@ -136,15 +136,6 @@
             "text": "",
             "image_url": "shopify:\/\/shop_images\/layer1-1.png"
           }
-        },
-        "a49f503f-57b6-4bd8-8aeb-1c3862f1c247": {
-          "type": "content",
-          "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "",
-            "image_url": "shopify:\/\/shop_images\/Today_logo.png"
-          }
         }
       },
       "block_order": [
@@ -152,8 +143,7 @@
         "f0cad22b-8b76-41b9-8b0a-ecf5faa88d5c",
         "52d687ed-0932-48d1-a0f9-f4cce23d00f0",
         "8b4615d9-2b95-490f-b129-c69b5a84af19",
-        "3c80d0c7-2134-4cf6-9ea0-78ecf57b36f8",
-        "a49f503f-57b6-4bd8-8aeb-1c3862f1c247"
+        "3c80d0c7-2134-4cf6-9ea0-78ecf57b36f8"
       ],
       "settings": {
         "bg_color": "#79725d",

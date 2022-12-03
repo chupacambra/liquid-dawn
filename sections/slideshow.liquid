@@ -1,83 +1,22 @@
-<style>
-  .swiper-container,
-  .swiper-wrapper {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .swiper-wrapper {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .swiper-slide {
-    display: flex;
-    align-items: flex-end;
-    width: auto;
-    margin-right: 8px;
-  }
-
-  .projectInfo {
-    position: relative;
-    margin: 14px 0 13px;
-    position: relative;
-    z-index: -1;
-    text-transform: uppercase;
-  }
-
-  .projectInfo .medium {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 100px;
-    font-style: italic;
-    padding: 0 7px 1px;
-  }
-
-  .thumbContainer {
-    opacity: 1;
-  }
-
-  .thumbContainer img {
-    display: block;
-    width: 200px;
-  }
-</style>
-
-
-<section id="{{ section.id }} " class=" text-center column-border ">
-  <div class="container ">
+<section id="{{ section.id }} " class=" text-center column-border masks-section-padding ">
+  <div class="container">
     <h3>FEATURED IN</h3>
     <h2>“Designed to fit your face better than other options on the market.”
     </h2>
   </div>
   <div class="swiper-container overflow-hidden">
-
-    <div class="swiper-wrapper">
-
+    <div class="swiper-wrapper mt-4">
       {% for block in section.blocks %}
         {% if block.settings.image_url != '' %}
-          <div class="swiper-slide">
-            <div class="thumbContainer">
+          <div class="swiper-slide ">
+            <div class="thumbContainer ">
               <img src="{{ block.settings.image_url | img_url }}">
             </div>
           </div>
         {% endif %}
       {% endfor %}
-
-      {%- comment -%}
-        <div class="swiper-slide">
-        <div class="thumbContainer">
-        <img class="img-fluid" src="{{ block.settings.image_url | img_url: '100x' }}">
-
-        </div>
-        </div>
-      {%- endcomment -%}
-
-
-
     </div>
-
   </div>
-
 </section>
 
 {% schema %}
