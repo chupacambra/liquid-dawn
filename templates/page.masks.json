@@ -84,8 +84,8 @@
         "bg_color": "#e22120",
         "heading": "How it works?",
         "subheading": "",
-        "image_main": "shopify:\/\/shop_images\/mask_two_74061893-c0e8-4b31-b9f4-2d3b3b106f60.png",
-        "image_small_one": "shopify:\/\/shop_images\/mask_one.png",
+        "image_main": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png",
+        "image_small_one": "shopify:\/\/shop_images\/mask_one_22916e71-0b00-4cb7-8d83-90160bc9e963.png",
         "image_small_two": "shopify:\/\/shop_images\/mask_one.png"
       }
     },
@@ -278,8 +278,10 @@
       "type": "two-cols-full",
       "settings": {
         "bg_color": "#eae6da",
-        "heading": "How it works?",
-        "subheading": "",
+        "heading": "Trusted and used by dermatologists worldwide",
+        "subheading": "Omnilux is recognized as the world leader in medical-grade LED light therapy devices. For the first time, there are now home-use devices based on Omnilux’s proven, professional-grade technology.",
+        "heading_two": "Comfortable & convenient",
+        "subheading_two": "Our devices are designed to perfectly conform to each treatment area for maximum comfort and results. The rechargeable controller is completely portable, allowing convenient treatments anytime, anywhere.",
         "image_variant1": "shopify:\/\/shop_images\/product_variant2.png",
         "image_variant2": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png"
       }

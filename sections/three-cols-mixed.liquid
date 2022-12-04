@@ -1,22 +1,30 @@
 <section class="column-border masks-section-padding" id="{{ section.id }}">
   <div class="container">
-    <div class="row g-5 d-flex justify-content-center ">
+    <div class="row g-5 ">
       <div class="col-12 col-lg-6">
         <img class="img-fluid" src="{{ section.settings.image_main | img_url: '2400x' }}">
+        <div class="d-block d-lg-none text-center">
+          <h1>Your favorites</h1>
+          <div class="masks-btn">Shop ALl</div>
+        </div>
       </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="row g-5  d-flex justify-content-center">
-          <div class="col-6 d-flex flex-column align-self-stretch">
-            <img class="img-fluid" src="{{ section.settings.image_small_one| img_url: '2400x' }}">
-            <h1 class="align-self-end">Your favorites</h1>
-          </div>
-          <div class="col-6">
-            <img class="img-fluid" src="{{ section.settings.image_small_two | img_url: '2400x' }}">
+      <!-- Second Column-->
+      <div class="col-6 col-lg-3 d-flex">
+        <div class="row align-content-between text-center ">
+          <img class="img-fluid" src="{{ section.settings.image_small_one| img_url: '2400x' }}">
+          <div class="d-none d-lg-block text-lg-start">
+            <h1>Your favorites</h1>
+            <div class="masks-btn">Shop ALl</div>
           </div>
         </div>
       </div>
+      <!-- Third Column-->
+      <div class="col-6 col-lg-3">
+        <img class="img-fluid" src="{{ section.settings.image_small_two | img_url: '2400x' }}">
+      </div>
+      <!-- End Row-->
     </div>
+    <!-- End Container-->
   </div>
 </section>
 

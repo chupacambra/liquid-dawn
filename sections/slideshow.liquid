@@ -1,11 +1,10 @@
-<section id="{{ section.id }} " class=" text-center column-border masks-section-padding ">
+<section id="{{ section.id }}" class=" text-center column-border masks-section-padding ">
   <div class="container">
-    <h3>FEATURED IN</h3>
-    <h2>“Designed to fit your face better than other options on the market.”
-    </h2>
+    <h4>FEATURED IN</h4>
+    <h2 class="mb-5">“Designed to fit your face better than other options on the market.”</h2>
   </div>
   <div class="swiper-container overflow-hidden">
-    <div class="swiper-wrapper mt-4">
+    <div class="swiper-wrapper mt-5">
       {% for block in section.blocks %}
         {% if block.settings.image_url != '' %}
           <div class="swiper-slide ">
