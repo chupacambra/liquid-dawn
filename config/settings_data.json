@@ -210,6 +210,14 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "footer-two": {
+        "type": "footer-two",
+        "settings": {
+          "heading": "Receive updates on products, launches & special offers",
+          "description": "By clicking SIGN UP, you agree to receive marketing text messages from Omnilux LED at the number provided, including messages sent by autodialer. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy and Terms of Service.",
+          "image_url": "shopify:\/\/shop_images\/logo_transparent.png"
+        }
       }
     },
     "content_for_index": [

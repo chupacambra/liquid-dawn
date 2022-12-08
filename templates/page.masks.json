@@ -24,7 +24,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_5.png"
           }
         },
@@ -33,7 +33,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_4.png"
           }
         },
@@ -42,7 +42,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_1.png"
           }
         },
@@ -51,7 +51,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_1.png"
           }
         },
@@ -60,7 +60,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_3.png"
           }
         }
@@ -84,9 +84,11 @@
         "bg_color": "#e22120",
         "heading": "How it works?",
         "subheading": "",
-        "image_main": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png",
-        "image_small_one": "shopify:\/\/shop_images\/mask_one_22916e71-0b00-4cb7-8d83-90160bc9e963.png",
-        "image_small_two": "shopify:\/\/shop_images\/mask_one.png"
+        "product_list": [
+          "omniloux-contour-glove",
+          "contour-face",
+          "contour-neck"
+        ]
       }
     },
     "dc68df97-9a2b-4d85-b116-03e9d5c32ee2": {
@@ -97,7 +99,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/WH_Logo.png"
           }
         },
@@ -106,7 +108,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/layer1.png"
           }
         },
@@ -115,7 +117,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Marie_Claire_Magazine_logo.png"
           }
         },
@@ -124,7 +126,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Allure_logo.png"
           }
         },
@@ -133,7 +135,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/layer1-1.png"
           }
         }
@@ -169,7 +171,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         },
@@ -178,7 +180,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         },
@@ -187,7 +189,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         },
@@ -196,7 +198,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         }
@@ -230,7 +232,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Omnilux_Product_16.png"
           }
         },
@@ -239,7 +241,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/OMNILUX_4_05478.png"
           }
         },
@@ -248,7 +250,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Omnilux_Product.png"
           }
         },
@@ -257,7 +259,7 @@
           "settings": {
             "icon": "",
             "heading": "",
-            "text": "",
+            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Omnilux_Product_46.png"
           }
         }
@@ -285,6 +287,79 @@
         "image_variant1": "shopify:\/\/shop_images\/product_variant2.png",
         "image_variant2": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png"
       }
+    },
+    "71d5e78f-58ff-4060-bfe4-6d96e1d8a95e": {
+      "type": "slideshow-pink",
+      "blocks": {
+        "bfc77c36-cce5-41a0-b467-dccf8ed65527": {
+          "type": "content",
+          "settings": {
+            "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p>",
+            "subheading": "- Ryan C.",
+            "svg": ""
+          }
+        },
+        "339c1f0e-3b7b-4ced-8002-46f09153a10e": {
+          "type": "content",
+          "settings": {
+            "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p><p><\/p>",
+            "subheading": "- Rosanna P.",
+            "svg": ""
+          }
+        },
+        "b16231c1-b321-4e73-b94d-087f38b8cee5": {
+          "type": "content",
+          "settings": {
+            "text": "<p>Last night was my first time using this mask…surprisingly, my skin looked better after one use.<\/p>",
+            "subheading": "- Rosanna P.",
+            "svg": ""
+          }
+        },
+        "06886db2-34b3-4221-9009-c0d282382923": {
+          "type": "content",
+          "settings": {
+            "text": "<p>Last night was my first time using this mask…surprisingly, my skin looked better after one use.<\/p>",
+            "subheading": "- Roy B.",
+            "svg": ""
+          }
+        },
+        "c2a0da2b-31ef-4509-b708-6f14e826f8f7": {
+          "type": "content",
+          "settings": {
+            "text": "<p>Last night was my first time using this mask…surprisingly, my skin looked better after one use.<\/p>",
+            "subheading": "- Roy B.",
+            "svg": ""
+          }
+        },
+        "1844d62c-a0ec-47de-9c8a-a09a3ddcf19c": {
+          "type": "content",
+          "settings": {
+            "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p>",
+            "subheading": "- Roy B.",
+            "svg": ""
+          }
+        },
+        "19fd55f8-6402-4a70-8a89-2f903250f43c": {
+          "type": "content",
+          "settings": {
+            "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p>",
+            "subheading": "- Roy B.",
+            "svg": "<svg width=\"100\" height=\"100\">\n<circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\"><\/circle>\n<\/svg>"
+          }
+        }
+      },
+      "block_order": [
+        "bfc77c36-cce5-41a0-b467-dccf8ed65527",
+        "339c1f0e-3b7b-4ced-8002-46f09153a10e",
+        "b16231c1-b321-4e73-b94d-087f38b8cee5",
+        "06886db2-34b3-4221-9009-c0d282382923",
+        "c2a0da2b-31ef-4509-b708-6f14e826f8f7",
+        "1844d62c-a0ec-47de-9c8a-a09a3ddcf19c",
+        "19fd55f8-6402-4a70-8a89-2f903250f43c"
+      ],
+      "settings": {
+        "heading": "How it works?"
+      }
     }
   },
   "order": [
@@ -297,6 +372,7 @@
     "2213c7cc-02a9-4ba8-b579-4d52b0da1d18",
     "c4b13a1b-2959-479b-b899-edc3a7cd7179",
     "f9555507-e87b-494a-a0a2-157fc7861cd4",
-    "609ceb0f-562a-4573-b52d-b743992760d2"
+    "609ceb0f-562a-4573-b52d-b743992760d2",
+    "71d5e78f-58ff-4060-bfe4-6d96e1d8a95e"
   ]
 }

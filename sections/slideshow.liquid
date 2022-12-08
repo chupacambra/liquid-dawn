@@ -3,11 +3,11 @@
     <h4>FEATURED IN</h4>
     <h2 class="mb-5">“Designed to fit your face better than other options on the market.”</h2>
   </div>
-  <div class="swiper-container overflow-hidden">
+  <div class="swiper-container swiper1 overflow-hidden">
     <div class="swiper-wrapper mt-5">
       {% for block in section.blocks %}
         {% if block.settings.image_url != '' %}
-          <div class="swiper-slide ">
+          <div class="swiper-slide" data-swiper-autoplay="2000">
             <div class="thumbContainer ">
               <img src="{{ block.settings.image_url | img_url }}">
             </div>

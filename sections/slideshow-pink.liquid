@@ -1,0 +1,97 @@
+<style>
+  .svg-demo:before {
+    content: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_one_200x.png?v=1670320881') !important;
+    margin-right: 10px;
+  }
+
+  .svg-demo:after {
+    content: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_two.png?v=1670320881') !important;
+    margin-left: 10px;
+  }
+</style>
+
+<section id="{{ section.id }}" class=" text-center column-border pink-gradient masks-section-padding p-0 overflow-hidden ">
+
+  <div class="container mt-5 overflow-hidden">
+    <h1 class="svg-demo" class="mt-5">{{ section.settings.heading }}</h1>
+  </div>
+
+  <div class="swiper-container swiper2 overflow-hidden slider-pink-border">
+    <div class="swiper-wrapper swiper-stretch">
+      {% for block in section.blocks %}
+        <div class="swiper-column swiper-slide slider2-border-right">
+          <p class="svg-demo">{{ block.settings.text }}</p>
+          <h3 class="fw-bolder">{{ block.settings.subheading }}</h3>
+        </div>
+      {%- endfor -%}
+    </div>
+
+  </div>
+
+  <div class="container-fluid mt-5 overflow-hidden">
+    <div class="row d-flex justify-content-center mb-5">
+      <div id="slider-btn-prev" class="slider-btn">←</div>
+      <div id="slider-btn-next" class="slider-btn">→</div>
+    </div>
+
+    <div class="row d-flex mb-2  px-md-5">
+      <div class="col-6 text-start px-md-5">
+        <h1>@omniluxled</h1>
+      </div>
+      <div class="col-6 align-items-start text-end px-0 px-md-5">
+        <div class="masks-btn">FOLLOW US</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider main container -->
+
+
+
+</section>
+
+{% schema %}
+  {
+    "name": "slideshow-pink",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General settings"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "info": "Leave empty to disable",
+        "default": "What they say?"
+      }
+    ],
+    "presets": [
+      {
+        "name": "slideshow-pink",
+        "category": "Content"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+
+          }, {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading"
+          }, {
+            "type": "html",
+            "id": "svg",
+            "label": "Svg icon"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

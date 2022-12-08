@@ -1,27 +1,57 @@
 <section class="column-border masks-section-padding" id="{{ section.id }}">
   <div class="container">
     <div class="row g-5 ">
-      <div class="col-12 col-lg-6">
-        <img class="img-fluid" src="{{ section.settings.image_main | img_url: '2400x' }}">
-        <div class="d-block d-lg-none text-center">
-          <h1>Your favorites</h1>
-          <div class="masks-btn">Shop ALl</div>
-        </div>
-      </div>
+
       <!-- Second Column-->
-      <div class="col-6 col-lg-3 d-flex">
-        <div class="row align-content-between text-center ">
-          <img class="img-fluid" src="{{ section.settings.image_small_one| img_url: '2400x' }}">
-          <div class="d-none d-lg-block text-lg-start">
-            <h1>Your favorites</h1>
-            <div class="masks-btn">Shop ALl</div>
+      {% for item in section.settings.product_list %}
+        {% assign index = forloop.index0 %}
+
+        {%- if index == 0 -%}
+          <div class="col-12 col-lg-6">
+            <div class="text-start">
+              <img class="img-fluid" src="{{ item.featured_image | img_url: "2400x"}}">
+              <h3 class="mt-3">{{ item.title }}</h3>
+              <p>{{ item.price | money }}</p>
+
+              <div class="d-block d-lg-none text-center mb-5">
+                <h1>Your Favorites</h1>
+                <div class="masks-btn mt-0">Shop ALL</div>
+              </div>
+              {%- comment -%}
+                <h1>{{ item.handle }}</h1>
+              {%- endcomment -%}
+            </div>
           </div>
-        </div>
-      </div>
+
+        {%- else -%}
+
+          <div class="col-6 col-lg-3 d-flex">
+            <div class="row align-content-between text-center ">
+              <div class="text-start">
+                <img class="img-fluid" src="{{ item.featured_image | img_url: 'large' }}">
+                <h3 class="mt-3">{{ item.title }}</h3>
+                <p>{{ item.price | money }}</p>
+              </div>
+              {%- if index == 1 -%}
+                <div class="d-none d-lg-block text-lg-start">
+                  <h1 class="mt-0">Your <br> Favorites</h1>
+                  <div class="masks-btn mt-0">Shop ALL</div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      {% endfor %}
+
+
       <!-- Third Column-->
-      <div class="col-6 col-lg-3">
-        <img class="img-fluid" src="{{ section.settings.image_small_two | img_url: '2400x' }}">
-      </div>
+      {%- comment -%}
+        <div class="col-6 col-lg-3">
+        <img class="img-fluid" src="{{ section.settings.product_two.featured_image | img_url: 'large' }}">
+        <h3 class="pt-3">{{ section.settings.product_two.title }}</h3>
+        <p>$ {{ section.settings.product_two.price }}</p>
+        </div>
+      {%- endcomment -%}
       <!-- End Row-->
     </div>
     <!-- End Container-->
@@ -55,17 +85,10 @@
         "label": "Subheading",
         "info": "Leave empty to disable"
       }, {
-        "type": "image_picker",
-        "id": "image_main",
-        "label": "Image"
-      }, {
-        "type": "image_picker",
-        "id": "image_small_one",
-        "label": "Image"
-      }, {
-        "type": "image_picker",
-        "id": "image_small_two",
-        "label": "Image"
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Products",
+        "limit": 3
       }
     ],
     "presets": [

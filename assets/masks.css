@@ -4,6 +4,11 @@
   padding-bottom: 10vh;
 }
 
+.position-relative {
+  position: relative;
+  top: -50%;
+}
+
 .subsection-margin {
   margin: 3vh;
 }
@@ -121,6 +126,7 @@ p {
 
 .video-heading {
   font-size: 7rem;
+  margin-top: 25vh;
 }
 
 .video-fit {
@@ -130,29 +136,22 @@ p {
   object-position: center;
 }
 
-@media (max-width: 768px) {
-  .video-heading br {
-    display: none;
-  }
-}
-
-/* Slider */
-.swiper-container,
-.swiper-wrapper {
+/* Slider1 */
+.swiper-container {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .swiper-wrapper {
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
 }
 
 .swiper-slide {
   display: flex;
-  align-items: flex-end;
   width: auto;
-  margin: 2vh 3vh 2vh 3vh;
 }
 
 .projectInfo {
@@ -170,8 +169,10 @@ p {
   padding: 0 7px 1px;
 }
 
+.thumbContainer,
 .thumbContainer {
   opacity: 1;
+  padding: 2vh 3vh 2vh 3vh;
 }
 
 .thumbContainer img {
@@ -194,6 +195,70 @@ p {
   margin-right: 10%;
 }
 
+/* Slider2 */
+.swiper-column {
+  width: 25vw;
+  padding: 5vh 2vh;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  min-height: 200px;
+}
+
+.swiper2 {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+.swiper-stretch {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+
+.wrapper-pink {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.slider-btn {
+  background-color: transparent;
+  border: 1px solid #a3988a;
+  color: 1px solid #a3988a;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: auto;
+  margin-top: 3vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+.slider-btn:hover {
+  background-color: black;
+  color: white;
+  width: auto;
+}
+
+.swiper-column h3 {
+  font-weight: 600;
+}
+
+.slider-pink-border {
+  border-bottom: 1px solid #a3988a;
+  border-top: 1px solid #a3988a;
+}
+
+.slider2-border-right {
+  border-right: 1px solid #a3988a;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 960px) {
   .masks-section-padding {
@@ -203,6 +268,7 @@ p {
 
   .video-heading {
     font-size: 5.5rem;
+    margin-top: 0;
   }
 
   h1 {
@@ -223,5 +289,19 @@ p {
   .masks-btn {
     margin-top: 3vh;
     margin-bottom: 3vh;
+  }
+
+  .swiper-column {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .video-heading br {
+    display: none;
+  }
+  .swiper-column {
+    width: 90vw;
+    min-height: 120px;
   }
 }

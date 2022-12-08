@@ -12,7 +12,18 @@
         <h1>What’s your skin concern?</h1>
         <p>Find the right device with clinically-proven results for clearer and healthier skin.</p>
       </div>
-      <div class="col-12 col-sm-6 col-lg-4 d-row text-center text-sm-start d-flex align-content-between flex-wrap">
+      <div class="col-12 col-sm-6 col-lg-4 d-row text-center text-sm-start d-flex justify-content-center  flex-wrap">
+
+        {% unless settings.product == blank %}
+          {% assign product = all_products[settings.product] %}
+
+          {% if product %}
+            <h1>{{ product.title }} - {{ product.price }}</h1>
+          {% else %}
+            No product, or invalid product, selected.
+          {% endif %}
+        {% endunless %}
+
         <img class="img-fluid" src="{{ section.settings.image_product1 | img_url: '2400x' }}">
         <div>
           <h2>“I want plumper, younger-looking skin”</h2>
@@ -20,7 +31,7 @@
           <div class="masks-btn">Shop Contour</div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-lg-4 d-row text-center text-sm-start d-flex align-content-between flex-wrap">
+      <div class="col-12 col-sm-6 col-lg-4 d-row text-center text-sm-start d-flex justify-content-center flex-wrap">
         <img class="img-fluid" src="{{ section.settings.image_product2 | img_url: '2400x' }}">
         <div>
           <h2>“I want plumper, younger-looking skin”</h2>
