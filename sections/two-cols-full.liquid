@@ -1,39 +1,32 @@
 <style>
-  .henlo{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+  .my-border{
+    {{- section.settings.section_border -}};
   }
 </style>
 
-<section class="column-border" id="{{ section.id }}">
-  <div class="container-fluid">    
-      <div class="row d-flex ">
+<section id="{{ section.id }}" style="{{- section.settings.section_border -}};">
+  <div class="container-fluid">
+    {%- if section.settings.reverse  -%}
+      <div class="row d-flex d-column flex-row-reverse px-md-0">
+        <div class="col-12 col-xl-6 d-flex flex-column text-center text-xl-start justify-content-center custom-padding-right">
+
+      {%- else -%}
+      <div class="row d-flex d-column">
+        <div class="col-12 col-xl-6 d-flex flex-column text-center text-xl-start justify-content-center custom-padding-left">
+    {%- endif -%}
           <!-- 1st Column-->
-        <div class="col-12 col-xl-6 d-flex flex-column justify-content-center order-2 order-xl-1 p-0 henlo">
-          <div class="text-center custom-margin-left text-xl-start w-75">
+          <div class="py-5 my-5 px-5">
             <h1 class="mt-0" >{{ section.settings.heading }}</h1>
             <p  >{{ section.settings.subheading }}</p>
-            <div class="masks-btn ">SHOP ALL</div>
+            <div class="masks-btn ">{{ section.settings.btn_text }}</div>
           </div>          
         </div>
-        <div class="col-12 col-xl-6 d-flex flex-column order-1 order-xl-2 p-0">
-          <img class="img-fluid" loading="lazy" src="{{ section.settings.image_variant1 | image_url }}">
-        </div>
-      </div>
-
-    <!--2nd Row-->
-    <div class="row d-flex ">
-      <div class="col-12 col-xl-6 d-flex flex-column justify-content-center p-0 mb-0">
-        <img class="img-fluid" loading="lazy" src="{{ section.settings.image_variant2 | image_url: width: 2400, height: 2400 }}">
-      </div>
-      <div class="col-12 d-flex flex-column col-xl-6 justify-content-center henlo">
-        <div class="text-center custom-margin-left text-xl-start w-75">
-          <h1 class="mt-0" >{{ section.settings.heading_two }}</h1>
-          <p>{{ section.settings.subheading_two }}</p>
-          <div class="masks-btn mb-5">SHOP ALL</div>
+        <div class="col-12 col-xl-6 d-flex flex-column px-0">
+          <img class="img-fluid" loading="lazy" src="{{ section.settings.image | image_url }}">
         </div>
       </div>
     </div>
+    <!--2nd Row-->
 </section>
 
 {% schema %}
@@ -45,10 +38,30 @@
         "content": "General settings"
       },
       {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background color",
-        "default": "#eae6da"
+        "type": "checkbox",
+        "id": "reverse",
+        "label": "Reverse",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "section_border",
+        "label": "Section Border",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "border-top: 1px solid black",
+            "label": "Top"
+          },
+          {
+            "value": "border-bottom: 1px solid black",
+            "label": "Bottom"
+          }
+        ],
+        "default": ""
       },
       {
         "type": "text",
@@ -65,23 +78,13 @@
         "default": "Omnilux is recognized as the world leader in medical-grade LED light therapy devices. For the first time, there are now home-use devices based on Omnilux’s proven, professional-grade technology."
       }, {
         "type": "text",
-        "id": "heading_two",
-        "label": "Heading Two",
+        "id": "btn_text",
+        "label": "Button Text",
         "info": "Leave empty to disable",
-        "default": "Comfortable & convenient"
-      }, {
-        "type": "text",
-        "id": "subheading_two",
-        "label": "Subheading Two",
-        "info": "Leave empty to disable",
-        "default": "Our devices are designed to perfectly conform to each treatment area for maximum comfort and results. The rechargeable controller is completely portable, allowing convenient treatments anytime, anywhere."
+        "default": "SHOP ALL"
       }, {
         "type": "image_picker",
-        "id": "image_variant1",
-        "label": "Image"
-      }, {
-        "type": "image_picker",
-        "id": "image_variant2",
+        "id": "image",
         "label": "Image"
       }
     ],

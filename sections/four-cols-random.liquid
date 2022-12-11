@@ -3,8 +3,8 @@
     <!-- HEADER -->
     <div class="g-5 row justify-content-center pb-5 px-5">
       <div class="col-12 col-lg-10 col-xl-8 text-center">
-        <h1 class="mt-0">Get professional results at home</h1>
-        <p>Designed with the same optimized energy output and wavelengths of light as our gold-standard Omnilux Medical professional devices, you get professional results in a single, 10-minute treatment session, at a fraction of the cost.</p>
+        <h1 class="mt-0">{{ section.settings.heading }}</h1>
+        <p>{{ section.settings.subheading }}</p>
       </div>
     </div>
     <!-- COLS -->
@@ -13,12 +13,12 @@
         {% assign column_width = forloop.index0 | modulo:2 %}
         {% assign small_icon_padding = forloop.index0 | plus: 2 %}
         {%- if column_width  == 0 -%}
-          <div class="col-8 col-lg-4">
-            <img class="img-fluid pt-md-{{ small_icon_padding }}" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
+          <div class="col-12 col-sm-8 col-lg-4">
+            <img class="img-fluid pt-4 pt-md-{{ small_icon_padding }}" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
           </div>
         {%- else -%}
           <div class="col-4 col-lg-2">
-            <img class="img-fluid pt-{{ small_icon_padding }}" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
+            <img class="img-fluid pt-4 pt-md-{{ small_icon_padding }}" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
             <h1></h1>
           </div>
         {%- endif -%}
@@ -26,7 +26,9 @@
     </div>
     <!-- BUTTON -->
     <div class="g-5 row justify-content-center mt-5">
-      <div class="masks-btn">SEE OUR PROVEN RESULTS</div>
+      <div class="masks-btn">
+        {{ section.settings.btn_text }}
+      </div>
     </div>
   </div>
 </section>
@@ -40,21 +42,23 @@
         "type": "header",
         "content": "General settings"
       }, {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background color",
-        "default": "#eae6da"
-      }, {
         "type": "text",
         "id": "heading",
         "label": "Heading",
         "info": "Leave empty to disable",
-        "default": "How it works?"
+        "default": "Get professional results at home"
       }, {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
-        "info": "Leave empty to disable"
+        "info": "Leave empty to disable",
+        "default": "Designed with the same optimized energy output and wavelengths of light as our gold-standard Omnilux Medical professional devices, you get professional results in a single, 10-minute treatment session, at a fraction of the cost."
+      }, {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "info": "Leave empty to disable",
+        "default": "SEE OUR PROVEN RESULTS"
       }
     ],
     "presets": [

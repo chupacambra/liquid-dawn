@@ -4,11 +4,6 @@
   padding-bottom: 10vh;
 }
 
-.position-relative {
-  position: relative;
-  top: -50%;
-}
-
 .subsection-margin {
   margin: 3vh;
 }
@@ -16,6 +11,8 @@
 .column-border {
   border-top: 1px solid black;
 }
+
+/* Gradients */
 
 .blue-gradient {
   background: linear-gradient(
@@ -73,6 +70,16 @@ p {
   line-height: 2.5rem;
 }
 
+.svg-demo:before {
+  content: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_one_200x.png?v=1670320881') !important;
+  margin-right: 10px;
+}
+
+.svg-demo:after {
+  content: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_two.png?v=1670320881') !important;
+  margin-left: 10px;
+}
+
 /* Buttons */
 .masks-btn {
   background-color: transparent;
@@ -93,7 +100,6 @@ p {
 .masks-btn:hover {
   background-color: black;
   color: white;
-  width: auto;
 }
 
 .masks-btn-white {
@@ -118,15 +124,31 @@ p {
 }
 
 /* Video */
-
 .video-hero {
   width: 100%;
   height: 100vh;
 }
 
 .video-heading {
-  font-size: 7rem;
   margin-top: 25vh;
+}
+
+.richtext-h1 > p {
+  font-size: 7rem;
+  color: white;
+  line-height: 7.5rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.richtext-h1 > p > em {
+  font-weight: 100;
+}
+
+.richtext-h3 > p {
+  font-size: 3rem;
+  color: white;
+  line-height: 3.5rem;
 }
 
 .video-fit {
@@ -136,22 +158,29 @@ p {
   object-position: center;
 }
 
+/* 5 cols Icons */
+.richtext-h2 > p {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+}
+
 /* Slider1 */
 .swiper-container {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
 }
 
 .swiper-wrapper {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 
 .swiper-slide {
   display: flex;
   width: auto;
+  flex-direction: column;
+  height: auto;
 }
 
 .projectInfo {
@@ -181,9 +210,14 @@ p {
 }
 
 /* 3 COLS UNEVEN SECTION */
-
 .column-border {
   border-top: 1px solid black;
+}
+
+/* 2 cols normal relative button */
+.position-relative {
+  position: relative;
+  top: -50%;
 }
 
 /* 2 cols full */
@@ -195,31 +229,28 @@ p {
   margin-right: 10%;
 }
 
+.custom-padding-left {
+  padding-right: 5vw;
+  padding-left: 2vw;
+}
+
+.custom-padding-right {
+  padding-left: 5vw;
+  padding-right: 2vw;
+}
+
 /* Slider2 */
 .swiper-column {
-  width: 25vw;
-  padding: 5vh 2vh;
+  width: 18vw;
+  padding: 8vh 2vh;
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  min-height: 200px;
 }
 
 .swiper2 {
   display: flex;
   flex-direction: row;
-  align-content: stretch;
-}
-.swiper-stretch {
-  display: flex;
-  flex-direction: row;
-  align-content: stretch;
-}
-
-.wrapper-pink {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
 }
 
 .slider-btn {
@@ -259,15 +290,26 @@ p {
   border-right: 1px solid #a3988a;
 }
 
+@media only screen and (max-width: 1200px) {
+  .swiper-column {
+    width: 30vw;
+  }
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 960px) {
   .masks-section-padding {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+
+  .richtext-h1 > p {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    margin-bottom: 0;
   }
 
   .video-heading {
-    font-size: 5.5rem;
     margin-top: 0;
   }
 
@@ -292,16 +334,26 @@ p {
   }
 
   .swiper-column {
-    width: 50vw;
+    width: 45vw;
+  }
+
+  .custom-padding-left {
+    padding: 0;
+  }
+
+  .custom-padding-right {
+    padding: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .video-heading br {
-    display: none;
-  }
   .swiper-column {
-    width: 90vw;
-    min-height: 120px;
+    width: 45vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .swiper-column {
+    width: 88vw;
   }
 }

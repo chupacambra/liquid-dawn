@@ -1,44 +1,27 @@
-<style>
-  .imegi {
-    background-size: cover;
-  }
-</style>
-
-<section class="column-border masks-section-padding" id="{{ section.id }}">
+<section class="column-border masks-section-padding" style="background-color: {{ section.settings.bg_color }}" id="{{ section.id }}">
   <div class="container-xxl">
-    <div class="row d-flex g-3 g-md-5 align-items-lg-center align-items-md-start">
-
-      <div class="col-12 col-lg-4 d-row text-center text-lg-start ">
-        <h1>What’s your skin concern?</h1>
-        <p>Find the right device with clinically-proven results for clearer and healthier skin.</p>
+    <div class="row d-flex g-1 justify-content-between">
+      <div class="col-12 d-flex flex-column align-self-center px-5 col-lg-4 text-center text-lg-start">
+        <h1 class="mb-3 pb-0">{{ section.settings.heading }}</h1>
+        <p class="mb-5 pb-3 pb-lg-0 mb-lg-0">{{ section.settings.subheading }}</p>
       </div>
-      <div class="col-12 col-sm-6 col-lg-4 d-row text-center text-sm-start d-flex justify-content-center  flex-wrap">
 
-        {% unless settings.product == blank %}
-          {% assign product = all_products[settings.product] %}
 
-          {% if product %}
-            <h1>{{ product.title }} - {{ product.price }}</h1>
-          {% else %}
-            No product, or invalid product, selected.
-          {% endif %}
-        {% endunless %}
-
-        <img class="img-fluid" src="{{ section.settings.image_product1 | img_url: '2400x' }}">
-        <div>
-          <h2>“I want plumper, younger-looking skin”</h2>
-          <p class="mb-3">Omnilux Contour™ red and near-infrared LED devices reduce fine lines, wrinkles, and the appearance of pigmentation and redness, while restoring an astonishingly healthy, youthful glow.</p>
-          <div class="masks-btn">Shop Contour</div>
+      {% for block in section.blocks limit:2 %}
+        <div class="col-12 col-sm-6 col-lg-4 text-lg-start px-3 text-center d-flex">
+          <div class="d-flex flex-column justify-content-between">
+            <div>
+              <img class="img-fluid" src="{{ block.settings.image | img_url: '2400x' }}">
+              <h2>{{ block.settings.heading }}</h2>
+            </div>
+            <div>
+              <p class="mb-3">{{ block.settings.text }}</p>
+              <div class="masks-btn">{{ block.settings.btn_text }}</div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4 d-row text-center text-sm-start d-flex justify-content-center flex-wrap">
-        <img class="img-fluid" src="{{ section.settings.image_product2 | img_url: '2400x' }}">
-        <div>
-          <h2>“I want plumper, younger-looking skin”</h2>
-          <p class="mb-3">Omnilux Contour™ red and near-infrared LED devices reduce fine lines, wrinkles, and the appearance of pigmentation and redness, while restoring an astonishingly healthy, youthful glow.</p>
-          <div class="masks-btn">Shop Clear</div>
-        </div>
-      </div>
+      {%- endfor -%}
+
     </div>
   </div>
 </section>
@@ -50,39 +33,55 @@
       {
         "type": "header",
         "content": "General settings"
-      },
-      {
+      }, {
         "type": "color",
         "id": "bg_color",
         "label": "Background color",
         "default": "#eae6da"
-      },
-      {
+      }, {
         "type": "text",
         "id": "heading",
         "label": "Heading",
         "info": "Leave empty to disable",
-        "default": "How it works?"
-      },
-      {
+        "default": "What’s your skin concern?"
+      }, {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
-        "info": "Leave empty to disable"
-      }, {
-        "type": "image_picker",
-        "id": "image_product1",
-        "label": "Image"
-      }, {
-        "type": "image_picker",
-        "id": "image_product2",
-        "label": "Image"
+        "info": "Leave empty to disable",
+        "default": "Find the right device with clinically-proven results for clearer and healthier skin."
       }
     ],
     "presets": [
       {
         "name": "three-cols-standard",
         "category": "Content"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "content",
+        "name": "Content",
+        "settings": [
+
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          }, {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
       }
     ]
   }

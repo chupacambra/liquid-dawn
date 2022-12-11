@@ -2,19 +2,16 @@
 
   <div class="container">
     <div class=" row d-flex justify-content-center pb-5">
-      <div class="col-12 text-center col-lg-10">
-        <h2 class="m-0">Omnilux redefined skincare with medical-grade
-          {{ section.settings.heading }}
-          <span>LED</span>
-          light therapy proven to enhance your natural skin.</h2>
+      <div class="col-12 text-center col-lg-10 richtext-h2">
+        {{ section.settings.heading }}
       </div>
     </div>
 
     <div class="row justify-content-center pt-5 ">
       {% for block in section.blocks %}
-        <div class="col-2 mx-2 text-center">
+        <div class="col-6 col-sm-4 col-lg-2 text-center">
           {% if block.settings.image_url != '' %}
-            <img class="img-fluid" src="{{ block.settings.image_url | img_url: '200x' }}">
+            <img class="img-fluid p-3" src="{{ block.settings.image_url | img_url: '200x' }}">
           {% endif %}
         </div>
       {% endfor %}
@@ -35,11 +32,10 @@
         "label": "Background color",
         "default": "#eae6da"
       }, {
-        "type": "text",
+        "type": "richtext",
         "id": "heading",
         "label": "Heading",
-        "info": "Leave empty to disable",
-        "default": "Omnilux redefined skincare with medical-grade LED light therapy proven to enhance your natural skin."
+        "info": "Leave empty to disable"
       }, {
         "type": "text",
         "id": "subheading",

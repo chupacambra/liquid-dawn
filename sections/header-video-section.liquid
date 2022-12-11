@@ -3,16 +3,25 @@
   <div class=" position-absolute top-0 w-100 h-100 d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-8">
-          <h1 class="video-heading text-white henloFren">From the
-            <span><br class="d-none d-lg-block"></span>
-            inside out</h1>
-          <h3 class="text-white">Skincare that treats beyond the barrier,<br class="d-none d-lg-block"> because healthy skin starts from within.</h3>
-          <a href="#" class="masks-btn masks-btn-white ">Shop Now</a>
+        <div class="col-12 col-md-10 col-lg-8 text-center text-md-start video-heading">
+          <div class="d-none d-md-block richtext-h1 mb-5">
+            {{ section.settings.heading }}
+          </div>
+          <div class="d-block d-md-none richtext-h1 mb-5">
+            {{ section.settings.mobile_heading }}
+          </div>
+          <div class="d-none d-md-block richtext-h3 mb-5">
+            {{ section.settings.subheading }}
+          </div>
+          <div class="d-block d-md-none richtext-h3 mb-5">
+            {{ section.settings.mobile_subheading }}
+          </div>
+          <a href="#" class="masks-btn masks-btn-white my-0">{{ section.settings.btn_text }}</a>
         </div>
       </div>
     </div>
   </div>
+
 </section>
 
 {% schema %}
@@ -22,22 +31,34 @@
       {
         "type": "header",
         "content": "General settings"
-      }, {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background color",
-        "default": "#eae6da"
-      }, {
-        "type": "text",
+      },
+      {
+        "type": "richtext",
+        "id": "subheading",
+        "label": "subheading",
+        "info": "Leave empty to disable"
+      },
+      {
+        "type": "richtext",
+        "id": "mobile_subheading",
+        "label": "Mobile Subeading",
+        "info": "Leave empty to disable"
+      },
+      {
+        "type": "richtext",
         "id": "heading",
         "label": "Heading",
-        "info": "Leave empty to disable",
-        "default": "From the inside out"
+        "info": "Leave empty to disable"
+      }, {
+        "type": "richtext",
+        "id": "mobile_heading",
+        "label": "Mobile Heading",
+        "info": "Leave empty to disable"
       }, {
         "type": "text",
-        "id": "subheading",
-        "label": "Subheading",
-        "info": "Leave empty to disable"
+        "id": "btn_text",
+        "label": "Button Text",
+        "default": "Shop Now"
       }
     ],
     "presets": [

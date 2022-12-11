@@ -28,15 +28,15 @@ var swiper2 = new Swiper('.swiper2', {
   },
 });
 
-document.getElementById('slider-btn-next').addEventListener('click', nextSlide);
-document.getElementById('slider-btn-prev').addEventListener('click', prevSlide);
+document.getElementById('slider-btn-next').addEventListener('click', prevSlide);
+document.getElementById('slider-btn-prev').addEventListener('click', nextSlide);
 
 function nextSlide(e) {
   e.preventDefault();
-  swiper2.slidePrev();
+  swiper2.slideNext();
 }
 
 function prevSlide(e) {
   e.preventDefault();
-  swiper2.slideNext();
+  swiper2.slidePrev();
 }

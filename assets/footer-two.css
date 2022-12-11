@@ -15,8 +15,16 @@
 
 .footer-icon {
   color: black;
-  width: 20px;
+  width: 23px;
   margin-bottom: 5px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
 }
 
 .footer-icon:hover {
@@ -53,6 +61,8 @@ ul {
 .footer-btn {
   border: 1px solid #6c757d;
   color: #262626;
+  background-color: white;
+  font-weight: bolder;
 }
 
 .footer-btn:hover {

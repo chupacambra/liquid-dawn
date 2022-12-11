@@ -1,16 +1,16 @@
-<style></style>
-
 <section class="column-border masks-section-padding pink-gradient" id="{{ section.id }}">
   <div class="container">
     <div class="row d-flex flex-lg-row-reverse">
       <div class="col-12 col-lg-6 d-flex justify-content-center  ps-md-5 flex-wrap">
         <img class="img-fluid" loading="lazy" src="{{ section.settings.image | image_url: width: 2400, height: 2400 }} ">
-        <div class="masks-btn masks-btn-white position-relative my-0" type="button">WATCH VIDEO ></div>
+        <div class="masks-btn masks-btn-white position-relative my-0">{{ section.settings.btn_text }}</div>
       </div>
-      <div class="col-12 col-lg-6 d-column pe-lg-5 text-center text-lg-start">
-        <h1 class="mt-lg-0">Medical-grade light therapy proven to enhance your natural skin</h1>
-        <p>We use medical-grade silicone and the most clinically-effective LEDs available in all of our products. With over 40 peer-reviewed published clinical studies and 20 years of research, all Omnilux products use optimized doses of red, near-infrared, and blue light to supercharge the body’s own natural cellular healing response to get the results you really want.</p>
-        <div class="masks-btn ">SHOP ALL</div>
+      <div class="col-12 col-lg-6 d-column pe-lg-5 d-flex flex-column justify-content-center text-center text-lg-start">
+        <h1 class="mt-lg-0">{{ section.settings.heading }}</h1>
+        <p>{{ section.settings.subheading }}</p>
+        <div>
+          <div class="masks-btn ">{{ section.settings.btn_text }}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -39,6 +39,16 @@
         "default": "How it works?"
       },
       {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "default": "WATCH VIDEO >"
+      }, {
+        "type": "text",
+        "id": "btn_text2",
+        "label": "Button Text",
+        "default": "See How it works"
+      }, {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",

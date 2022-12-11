@@ -1,25 +1,23 @@
 <section class="column-border masks-section-padding" id="{{ section.id }}">
   <div class="container">
-    <div class="row g-5 ">
+    <div class="row d-flex g-5">
 
       <!-- Second Column-->
       {% for item in section.settings.product_list %}
         {% assign index = forloop.index0 %}
 
         {%- if index == 0 -%}
-          <div class="col-12 col-lg-6">
-            <div class="text-start">
+          <div class="col-12 col-lg-6 d-flex ">
+            <div class="text-start d-flex flex-column justify-content-between">
               <img class="img-fluid" src="{{ item.featured_image | img_url: "2400x"}}">
-              <h3 class="mt-3">{{ item.title }}</h3>
-              <p>{{ item.price | money }}</p>
-
-              <div class="d-block d-lg-none text-center mb-5">
-                <h1>Your Favorites</h1>
-                <div class="masks-btn mt-0">Shop ALL</div>
+              <div class="m-0 p-0">
+                <h3 class="mt-3">{{ item.title }}</h3>
+                <p class="m-0 ">{{ item.price | money }}</p>
               </div>
-              {%- comment -%}
-                <h1>{{ item.handle }}</h1>
-              {%- endcomment -%}
+              <div class="d-block d-lg-none text-center mb-5">
+                <h1>{{ section.settings.heading }}</h1>
+                <div class="masks-btn">{{ section.settings.btn_text }}</div>
+              </div>
             </div>
           </div>
 
@@ -34,25 +32,14 @@
               </div>
               {%- if index == 1 -%}
                 <div class="d-none d-lg-block text-lg-start">
-                  <h1 class="mt-0">Your <br> Favorites</h1>
-                  <div class="masks-btn mt-0">Shop ALL</div>
+                  <h1 class="mt-0">{{ section.settings.heading }}</h1>
+                  <div class="masks-btn mt-0">{{ section.settings.btn_text }}</div>
                 </div>
               {%- endif -%}
             </div>
           </div>
         {%- endif -%}
       {% endfor %}
-
-
-      <!-- Third Column-->
-      {%- comment -%}
-        <div class="col-6 col-lg-3">
-        <img class="img-fluid" src="{{ section.settings.product_two.featured_image | img_url: 'large' }}">
-        <h3 class="pt-3">{{ section.settings.product_two.title }}</h3>
-        <p>$ {{ section.settings.product_two.price }}</p>
-        </div>
-      {%- endcomment -%}
-      <!-- End Row-->
     </div>
     <!-- End Container-->
   </div>
@@ -70,20 +57,25 @@
         "type": "color",
         "id": "bg_color",
         "label": "Background color",
-        "default": "#eae6da"
+        "default": "#ffffff"
       },
       {
         "type": "text",
         "id": "heading",
         "label": "Heading",
         "info": "Leave empty to disable",
-        "default": "How it works?"
+        "default": "Your favorites"
       },
       {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
         "info": "Leave empty to disable"
+      }, {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "default": "Shop All"
       }, {
         "type": "product_list",
         "id": "product_list",
