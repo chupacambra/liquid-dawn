@@ -1,29 +1,40 @@
 <section class="column-border masks-section-padding pink-gradient " id="{{ section.id }}">
   <div class="container justify-content-center">
     <!-- HEADER -->
-    <div class="g-5 row justify-content-center pb-5 px-5">
-      <div class="col-12 col-lg-10 col-xl-8 text-center">
-        <h1 class="mt-0">{{ section.settings.heading }}</h1>
-        <p>{{ section.settings.subheading }}</p>
+    {%- unless section.settings.heading == "" and section.settings.subheading == "" -%}
+      <div class="g-5 row justify-content-center pb-5 px-5">
+        <div class="col-12 col-lg-10 col-xl-8 text-center">
+          <h1 class="mt-0">{{ section.settings.heading }}</h1>
+          <p>{{ section.settings.subheading }}</p>
+        </div>
       </div>
-    </div>
+    {%- endunless -%}
+
     <!-- COLS -->
-    <div class="g-5 row justify-content-center py-5 px-5">
-      {% for block in section.blocks %}
-        {% assign column_width = forloop.index0 | modulo:2 %}
-        {% assign small_icon_padding = forloop.index0 | plus: 2 %}
-        {%- if column_width  == 0 -%}
-          <div class="col-12 col-sm-8 col-lg-4">
-            <img class="img-fluid pt-4 pt-md-{{ small_icon_padding }}" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
+
+    {%- unless section.blocks.size == 0 -%}
+
+      <div class="g-5 row d-flex justify-content-center py-5 px-5">
+        {% for block in section.blocks %}
+          {% assign column = forloop.index0 | modulo: 2 %}
+          {% assign small_icon_padding = forloop.index0 | plus: 2 %}
+          {% assign column_width = "col-12 col-4 col-lg-2" %}
+
+          {%- if column == 0 -%}
+            {%- assign column_width = "col-12 col-sm-8 col-lg-4" -%}
+          {%- endif -%}
+
+          <div class="{{ column_width }} text-center">
+            <img
+              class="img-fluid pt-4 pt-md-{{ small_icon_padding }}"
+              loading="lazy"
+              src="{{ block.settings.image_url | img_url:"grande" }} ">
           </div>
-        {%- else -%}
-          <div class="col-4 col-lg-2">
-            <img class="img-fluid pt-4 pt-md-{{ small_icon_padding }}" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
-            <h1></h1>
-          </div>
-        {%- endif -%}
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
+    {%- endunless -%}
+
+
     <!-- BUTTON -->
     <div class="g-5 row justify-content-center mt-5">
       <div class="masks-btn">

@@ -1,32 +1,32 @@
-<style>
-  .my-border{
-    {{- section.settings.section_border -}};
-  }
-</style>
+{% assign reverse = "" -%}
+{% assign padding = "-left" -%}
 
 <section id="{{ section.id }}" style="{{- section.settings.section_border -}};">
   <div class="container-fluid">
-    {%- if section.settings.reverse  -%}
-      <div class="row d-flex d-column flex-row-reverse px-md-0">
-        <div class="col-12 col-xl-6 d-flex flex-column text-center text-xl-start justify-content-center custom-padding-right">
 
-      {%- else -%}
-      <div class="row d-flex d-column">
-        <div class="col-12 col-xl-6 d-flex flex-column text-center text-xl-start justify-content-center custom-padding-left">
+    {%- if section.settings.reverse == true -%}
+      {%- assign reverse = "-reverse" -%}
+      {%- assign padding = "-right" -%}
     {%- endif -%}
-          <!-- 1st Column-->
-          <div class="py-5 my-5 px-5">
-            <h1 class="mt-0" >{{ section.settings.heading }}</h1>
-            <p  >{{ section.settings.subheading }}</p>
-            <div class="masks-btn ">{{ section.settings.btn_text }}</div>
-          </div>          
-        </div>
-        <div class="col-12 col-xl-6 d-flex flex-column px-0">
-          <img class="img-fluid" loading="lazy" src="{{ section.settings.image | image_url }}">
+
+    <div class="row d-flex d-column flex-row{{ reverse }} px-md-0">
+      <div class="col-12 col-xl-6 d-flex flex-column text-center text-xl-start justify-content-center custom-padding{{ padding }}">
+        <!-- 1st Column-->
+        <div class="py-5 my-5 px-5">
+          <h2 class="mt-0 h1">{{ section.settings.heading }}</h2>
+          <p>{{ section.settings.subheading }}</p>
+          <div class="masks-btn ">{{ section.settings.btn_text }}</div>
         </div>
       </div>
+      <div class="col-12 col-xl-6 d-flex flex-column px-0">
+        <img
+          class="img-fluid"
+          loading="lazy"
+          src="{{ section.settings.image | image_url }}">
+      </div>
     </div>
-    <!--2nd Row-->
+  </div>
+  <!--2nd Row-->
 </section>
 
 {% schema %}
@@ -51,12 +51,10 @@
           {
             "value": "",
             "label": "None"
-          },
-          {
+          }, {
             "value": "border-top: 1px solid black",
             "label": "Top"
-          },
-          {
+          }, {
             "value": "border-bottom: 1px solid black",
             "label": "Bottom"
           }
@@ -69,8 +67,7 @@
         "label": "Heading",
         "info": "Leave empty to disable",
         "default": "Trusted and used by dermatologists worldwide?"
-      },
-      {
+      }, {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",

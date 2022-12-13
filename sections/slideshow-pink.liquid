@@ -1,14 +1,14 @@
 <section id="{{ section.id }}" class=" text-center column-border pink-gradient masks-section-padding p-0 overflow-hidden ">
 
   <div class="container mt-5 overflow-hidden">
-    <h1 class="svg-demo" class="mt-5">{{ section.settings.heading }}</h1>
+    <h1 class="mt-5">{{ section.settings.heading }}</h1>
   </div>
 
   <div class="swiper-container swiper2 overflow-hidden slider-pink-border">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         <div class="swiper-column swiper-slide slider2-border-right d-flex flex-column">
-          <p class="svg-demo">{{ block.settings.text }}</p>
+          <div class="svg-demo">{{ block.settings.text }}</div>
           <h3 class="fw-bolder">{{ block.settings.subheading }}</h3>
         </div>
       {%- endfor -%}
@@ -19,7 +19,6 @@
     <div class="row d-flex  justify-content-center mb-5">
       <div id="slider-btn-prev" class="slider-btn">←</div>
       <div id="slider-btn-next" class="slider-btn">→</div>
-
 
     </div>
 
@@ -74,7 +73,7 @@
         "name": "Content",
         "settings": [
           {
-            "type": "richtext",
+            "type": "text",
             "id": "text",
             "label": "Text"
 
@@ -82,10 +81,6 @@
             "type": "text",
             "id": "subheading",
             "label": "Subheading"
-          }, {
-            "type": "html",
-            "id": "svg",
-            "label": "Svg icon"
           }
         ]
       }

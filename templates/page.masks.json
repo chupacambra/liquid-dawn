@@ -24,45 +24,30 @@
         "bda463b7-afe0-4ef8-8d03-b31c62b475ea": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_5.png"
           }
         },
         "28c93b29-bea0-4f41-bb60-2f480601a221": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_4.png"
           }
         },
         "f30a2c53-e393-456c-a428-215f4fa370d2": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_1.png"
           }
         },
         "1168b3db-206c-4f99-9903-54c0e9320467": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_1.png"
           }
         },
         "6b3c244b-0461-4ae5-9993-bfc51e898b47": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Icon_3.png"
           }
         }
@@ -75,17 +60,14 @@
         "6b3c244b-0461-4ae5-9993-bfc51e898b47"
       ],
       "settings": {
-        "bg_color": "#eae6da",
-        "heading": "<p>Omnilux redefined skincare with medical-grade <em>LED<\/em> light therapy proven to enhance your natural skin.<\/p>",
-        "subheading": "Skincare that treats beyond the barrier, because healthy skin starts from within."
+        "heading": "<p>Omnilux redefined skincare with medical-grade <em>LED<\/em> light therapy proven to enhance your natural skin.<\/p>"
       }
     },
     "05838ccb-7db5-4a17-829c-3a43b5da045e": {
       "type": "three-cols-mixed",
       "settings": {
-        "bg_color": "#eddfdf",
-        "heading": "Your favorites",
-        "subheading": "",
+        "bg_color": "#ffffff",
+        "heading": "<p>Your <br\/>favorites<\/p>",
         "btn_text": "Shop All",
         "product_list": [
           "omniloux-contour-glove",
@@ -100,45 +82,30 @@
         "4ad27ebc-3676-4c73-8312-5c0160c7ccd9": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/WH_Logo.png"
           }
         },
         "f0cad22b-8b76-41b9-8b0a-ecf5faa88d5c": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/layer1.png"
           }
         },
         "52d687ed-0932-48d1-a0f9-f4cce23d00f0": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Marie_Claire_Magazine_logo.png"
           }
         },
         "8b4615d9-2b95-490f-b129-c69b5a84af19": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/Allure_logo.png"
           }
         },
         "3c80d0c7-2134-4cf6-9ea0-78ecf57b36f8": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/layer1-1.png"
           }
         }
@@ -151,36 +118,36 @@
         "3c80d0c7-2134-4cf6-9ea0-78ecf57b36f8"
       ],
       "settings": {
-        "bg_color": "#79725d",
-        "heading": "How it works?",
-        "subheading": ""
+        "bg_color": "#ffffff",
+        "heading": "FEATURED IN",
+        "subheading": "“Designed to fit your face better than other options on the market.”"
       }
     },
-    "130cb98d-144c-418b-9801-0c02a10c1bd0": {
+    "fd75413c-67a3-45ed-b38c-95c7fa31aa79": {
       "type": "three-cols-standard",
       "blocks": {
-        "000e8cfc-018e-4d18-8971-bdd9ff47255f": {
-          "type": "content",
-          "settings": {
-            "heading": "“I want plumper, younger-looking skin”",
-            "text": "<p>Omnilux Contour™ red and near-infrared LED devices reduce fine lines, wrinkles, and the appearance of pigmentation and redness, while restoring a healthy, youthful glow.<\/p>",
-            "btn_text": "<p>SHOP CONTOUR<\/p>",
-            "image": "shopify:\/\/shop_images\/face_two.png"
-          }
-        },
-        "18d80a2c-b041-4d58-87a2-26850443cb53": {
+        "3853c76e-3cd0-4169-ab6e-9ed5d79a48ae": {
           "type": "content",
           "settings": {
             "heading": "“I want to treat my acne and clear breakouts faster”",
-            "text": "<p>The Omnilux CLEAR™ red and blue LED device significantly reduces or eliminates acne, blemishes, and inflammation, while softening the appearance of acne scarring.<\/p>",
-            "btn_text": "<p>SHOP CLEAR<\/p>",
+            "text": "<p>Omnilux Contour™ red and near-infrared LED devices reduce fine lines, wrinkles, and the appearance of pigmentation and redness, while restoring a healthy, youthful glow.<\/p>",
+            "btn_text": "shop contour",
             "image": "shopify:\/\/shop_images\/face_one.png"
+          }
+        },
+        "fa187c43-faac-4c1b-8439-1c858380bfc2": {
+          "type": "content",
+          "settings": {
+            "heading": "“I want plumper, younger-looking skin”",
+            "text": "<p>The Omnilux CLEAR™ red and blue LED device significantly reduces or eliminates acne, blemishes, and inflammation, while softening the appearance of acne scarring.<\/p>",
+            "btn_text": "Shop clear",
+            "image": "shopify:\/\/shop_images\/face_two.png"
           }
         }
       },
       "block_order": [
-        "000e8cfc-018e-4d18-8971-bdd9ff47255f",
-        "18d80a2c-b041-4d58-87a2-26850443cb53"
+        "3853c76e-3cd0-4169-ab6e-9ed5d79a48ae",
+        "fa187c43-faac-4c1b-8439-1c858380bfc2"
       ],
       "settings": {
         "bg_color": "#ffffff",
@@ -194,36 +161,24 @@
         "fce87277-e71e-471c-ae94-3abda210e84c": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         },
         "2818a6aa-10b6-44f1-b5ee-c8314d496359": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         },
         "5110fea9-19b4-476a-84f4-b293ecd4aa87": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         },
         "a305da81-2623-4091-a28f-5edc9576e8ad": {
           "type": "content",
           "settings": {
-            "icon": "",
-            "heading": "",
-            "text": "<p><\/p>",
             "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
           }
         }
@@ -236,22 +191,20 @@
       ],
       "settings": {
         "bg_color": "#ffffff",
-        "heading": "AWARDS AND RECOGNITIONS",
-        "subheading": ""
+        "heading": "AWARDS AND RECOGNITIONS"
       }
     },
     "fe3c2ecf-f40b-4bcb-abdb-49f15022e896": {
       "type": "two-cols-container",
       "settings": {
-        "bg_color": "#eae6da",
         "heading": "Medical-grade light therapy proven to enhance your natural skin",
+        "subheading": "We use medical-grade silicone and the most clinically-effective LEDs available in all of our products. With over 40 peer-reviewed published clinical studies and 20 years of research, all Omnilux products use optimized doses of red, near-infrared, and blue light to supercharge the body’s own natural cellular healing response to get the results you really want.",
         "btn_text": "See How it works",
         "btn_text2": "WATCH VIDEO >",
-        "subheading": "We use medical-grade silicone and the most clinically-effective LEDs available in all of our products. With over 40 peer-reviewed published clinical studies and 20 years of research, all Omnilux products use optimized doses of red, near-infrared, and blue light to supercharge the body’s own natural cellular healing response to get the results you really want.",
         "image": "shopify:\/\/shop_images\/Mask_Group_3_2fd1a29c-d3ac-490d-b0bd-215941342679.png"
       }
     },
-    "58a72006-98c5-45df-a3a0-caebd0fc0158": {
+    "73ef828e-b24f-40ee-b739-079b98007bc4": {
       "type": "two-cols-full",
       "settings": {
         "reverse": false,
@@ -259,10 +212,10 @@
         "heading": "Trusted and used by dermatologists worldwide?",
         "subheading": "Omnilux is recognized as the world leader in medical-grade LED light therapy devices. For the first time, there are now home-use devices based on Omnilux’s proven, professional-grade technology.",
         "btn_text": "SHOP ALL",
-        "image": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png"
+        "image": "shopify:\/\/shop_images\/product_variant2.png"
       }
     },
-    "73ef828e-b24f-40ee-b739-079b98007bc4": {
+    "58a72006-98c5-45df-a3a0-caebd0fc0158": {
       "type": "two-cols-full",
       "settings": {
         "reverse": true,
@@ -270,7 +223,7 @@
         "heading": "Trusted and used by dermatologists worldwide?",
         "subheading": "Omnilux is recognized as the world leader in medical-grade LED light therapy devices. For the first time, there are now home-use devices based on Omnilux’s proven, professional-grade technology.",
         "btn_text": "SHOP ALL",
-        "image": "shopify:\/\/shop_images\/product_variant2.png"
+        "image": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png"
       }
     },
     "f9555507-e87b-494a-a0a2-157fc7861cd4": {
@@ -332,56 +285,49 @@
           "type": "content",
           "settings": {
             "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p>",
-            "subheading": "- Ryan C.",
-            "svg": ""
+            "subheading": "- Ryan C."
           }
         },
         "339c1f0e-3b7b-4ced-8002-46f09153a10e": {
           "type": "content",
           "settings": {
             "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p><p><\/p>",
-            "subheading": "- Rosanna P.",
-            "svg": ""
+            "subheading": "- Rosanna P."
           }
         },
         "b16231c1-b321-4e73-b94d-087f38b8cee5": {
           "type": "content",
           "settings": {
             "text": "<p>Last night was my first time using this mask…surprisingly, my skin looked better after one use.<\/p>",
-            "subheading": "- Rosanna P.",
-            "svg": ""
+            "subheading": "- Rosanna P."
           }
         },
         "06886db2-34b3-4221-9009-c0d282382923": {
           "type": "content",
           "settings": {
             "text": "<p>Last night was my first time using this mask…surprisingly, my skin looked better after one use.<\/p>",
-            "subheading": "- Roy B.",
-            "svg": ""
+            "subheading": "- Roy B."
           }
         },
         "c2a0da2b-31ef-4509-b708-6f14e826f8f7": {
           "type": "content",
           "settings": {
             "text": "<p>Last night was my first time using this mask…surprisingly, my skin looked better after one use.<\/p>",
-            "subheading": "- Roy B.",
-            "svg": ""
+            "subheading": "- Roy B."
           }
         },
         "1844d62c-a0ec-47de-9c8a-a09a3ddcf19c": {
           "type": "content",
           "settings": {
             "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p>",
-            "subheading": "- Roy B.",
-            "svg": ""
+            "subheading": "- Roy B."
           }
         },
         "19fd55f8-6402-4a70-8a89-2f903250f43c": {
           "type": "content",
           "settings": {
             "text": "<p>I’m a huge fan of my Omnilux Contour! Immediately after treatment, my skin looks refreshed, even, and plump. With continued use, the redness in my cheeks has decreased significantly.<\/p>",
-            "subheading": "- Roy B.",
-            "svg": "<svg width=\"100\" height=\"100\">\n<circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\"><\/circle>\n<\/svg>"
+            "subheading": "- Roy B."
           }
         }
       },
@@ -407,11 +353,11 @@
     "89820711-8f00-4aab-acf4-e82d77d0381f",
     "05838ccb-7db5-4a17-829c-3a43b5da045e",
     "dc68df97-9a2b-4d85-b116-03e9d5c32ee2",
-    "130cb98d-144c-418b-9801-0c02a10c1bd0",
+    "fd75413c-67a3-45ed-b38c-95c7fa31aa79",
     "2213c7cc-02a9-4ba8-b579-4d52b0da1d18",
     "fe3c2ecf-f40b-4bcb-abdb-49f15022e896",
-    "58a72006-98c5-45df-a3a0-caebd0fc0158",
     "73ef828e-b24f-40ee-b739-079b98007bc4",
+    "58a72006-98c5-45df-a3a0-caebd0fc0158",
     "f9555507-e87b-494a-a0a2-157fc7861cd4",
     "71d5e78f-58ff-4060-bfe4-6d96e1d8a95e"
   ]

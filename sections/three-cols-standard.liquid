@@ -2,26 +2,30 @@
   <div class="container-xxl">
     <div class="row d-flex g-1 justify-content-between">
       <div class="col-12 d-flex flex-column align-self-center px-5 col-lg-4 text-center text-lg-start">
-        <h1 class="mb-3 pb-0">{{ section.settings.heading }}</h1>
-        <p class="mb-5 pb-3 pb-lg-0 mb-lg-0">{{ section.settings.subheading }}</p>
+        {%- unless  section.settings.heading == 0 -%}
+          <h1 class="mb-3 pb-0">{{ section.settings.heading }}</h1>
+        {%- endunless -%}
+        {%- unless  section.settings.subheading == 0 -%}
+          <p class="mb-5 pb-3 pb-lg-0 mb-lg-0">{{ section.settings.subheading }}</p>
+        {%- endunless -%}
       </div>
 
-
-      {% for block in section.blocks limit:2 %}
-        <div class="col-12 col-sm-6 col-lg-4 text-lg-start px-3 text-center d-flex">
-          <div class="d-flex flex-column justify-content-between">
-            <div>
-              <img class="img-fluid" src="{{ block.settings.image | img_url: '2400x' }}">
-              <h2>{{ block.settings.heading }}</h2>
-            </div>
-            <div>
-              <p class="mb-3">{{ block.settings.text }}</p>
-              <div class="masks-btn">{{ block.settings.btn_text }}</div>
+      {%- unless  section.blocks.size == 0 -%}
+        {% for block in section.blocks limit:2 %}
+          <div class="col-12 col-sm-6 col-lg-4 text-lg-start px-3 text-center d-flex">
+            <div class="d-flex flex-column justify-content-between">
+              <div>
+                <img class="img-fluid" src="{{ block.settings.image | img_url: '2400x' }}">
+                <h2>{{ block.settings.heading }}</h2>
+              </div>
+              <div>
+                <p class="mb-3">{{ block.settings.text }}</p>
+                <a class="masks-btn">{{ block.settings.btn_text }}</a>
+              </div>
             </div>
           </div>
-        </div>
-      {%- endfor -%}
-
+        {%- endfor -%}
+      {%- endunless -%}
     </div>
   </div>
 </section>

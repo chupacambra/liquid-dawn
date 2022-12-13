@@ -6,7 +6,12 @@
         <img class="footer-img" src="{{ section.settings.image_url | image_url: width: 175, height: 175   }} ">
         <h3>{{ section.settings.heading }}</h3>
         <div class="input-group mt-4">
-          <input type="text" style="font-size: 18px;" class="form-control border-secondary" placeholder="Enter Your Email" aria-label="Recipient's username with two button addons">
+          <input
+            type="text"
+            style="font-size: 18px;"
+            class="form-control border-secondary"
+            placeholder="Enter Your Email"
+            aria-label="Recipient's username with two button addons">
           <button class="footer-btn mt-0 px-5 py-3" type="button">SUBMIT</button>
         </div>
         <p class="mt-5 footer-p pb-0 ">{{ section.settings.description }}</p>
@@ -100,24 +105,6 @@
       {
         "name": "footer-two",
         "category": "Content"
-      }
-    ],
-
-    "blocks": [
-      {
-        "type": "content",
-        "name": "Content",
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "Text"
-          }, {
-            "type": "text",
-            "id": "subheading",
-            "label": "Subheading"
-          }
-        ]
       }
     ]
   }

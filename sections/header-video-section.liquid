@@ -4,18 +4,26 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8 text-center text-md-start video-heading">
-          <div class="d-none d-md-block richtext-h1 mb-5">
-            {{ section.settings.heading }}
-          </div>
-          <div class="d-block d-md-none richtext-h1 mb-5">
-            {{ section.settings.mobile_heading }}
-          </div>
-          <div class="d-none d-md-block richtext-h3 mb-5">
-            {{ section.settings.subheading }}
-          </div>
-          <div class="d-block d-md-none richtext-h3 mb-5">
-            {{ section.settings.mobile_subheading }}
-          </div>
+          {%- unless section.settings.heading == "" -%}
+            <div class="d-none d-md-block richtext-h1 mb-5">
+              {{ section.settings.heading }}
+            </div>
+          {%- endunless -%}
+          {%- unless section.settings.mobile_heading == "" -%}
+            <div class="d-block d-md-none richtext-h1 mb-5">
+              {{ section.settings.mobile_heading }}
+            </div>
+          {%- endunless -%}
+          {%- unless section.settings.subheading == "" -%}
+            <div class="d-none d-md-block richtext-h3 mb-5">
+              {{ section.settings.subheading }}
+            </div>
+          {%- endunless -%}
+          {%- unless section.settings.mobile_subheading == "" -%}
+            <div class="d-block d-md-none richtext-h3 mb-5">
+              {{ section.settings.mobile_subheading }}
+            </div>
+          {%- endunless -%}
           <a href="#" class="masks-btn masks-btn-white my-0">{{ section.settings.btn_text }}</a>
         </div>
       </div>
@@ -45,8 +53,8 @@
         "info": "Leave empty to disable"
       },
       {
-        "type": "richtext",
         "id": "heading",
+        "type": "richtext",
         "label": "Heading",
         "info": "Leave empty to disable"
       }, {
