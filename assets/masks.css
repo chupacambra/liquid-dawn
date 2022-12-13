@@ -1,4 +1,19 @@
 /* GENERAL */
+.object-fit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.object-fit.--cover {
+  object-fit: cover;
+}
+
+.object-fit.--contain {
+  object-fit: contain;
+}
+
 .masks-section-padding {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -71,15 +86,31 @@ p {
 }
 
 .svg-demo:before {
-  content: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_one_200x.png?v=1670320881') !important;
-  margin-right: 10px;
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_one_200x.png?v=1670320881');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  margin-right: 5px;
 }
 
-.svg-demo:after {
-  content: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_two.png?v=1670320881') !important;
-  margin-left: 10px;
+.svg-demo::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_one_200x.png?v=1670320881');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  transform: rotate(-180deg);
 }
-
 /* Buttons */
 .masks-btn {
   background-color: transparent;
@@ -214,10 +245,9 @@ p {
   border-top: 1px solid black;
 }
 
-/* 2 cols normal relative button */
-.position-relative {
-  position: relative;
-  top: -50%;
+.h1 > p {
+  font-size: 5rem;
+  line-height: 6rem;
 }
 
 /* 2 cols full */
