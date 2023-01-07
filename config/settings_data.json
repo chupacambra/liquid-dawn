@@ -12,7 +12,9 @@
     "colors_background_2": "#fafafa",
     "gradient_background_2": "",
     "type_header_font": "anonymous_pro_n4",
+    "type_header_font": "anonymous_pro_n4",
     "heading_scale": 100,
+    "type_body_font": "arvo_n4",
     "type_body_font": "arvo_n4",
     "body_scale": 100,
     "page_width": 1200,
@@ -132,17 +134,14 @@
             }
           }
         },
-        "block_order": [
-          "announcement-bar-0"
-        ],
-        "settings": {
-        }
+        "block_order": ["announcement-bar-0"],
+        "settings": {}
       },
       "header": {
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/logo_transparent.png",
+          "logo": "shopify://shop_images/logo_transparent.png",
           "logo_width": 140,
           "logo_position": "middle-center",
           "menu": "main-menu",
@@ -176,15 +175,11 @@
             "type": "text",
             "settings": {
               "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
             }
           }
         },
-        "block_order": [
-          "footer-0",
-          "footer-1",
-          "footer-2"
-        ],
+        "block_order": ["footer-0", "footer-1", "footer-2"],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
@@ -216,13 +211,11 @@
         "settings": {
           "heading": "Receive updates on products, launches & special offers",
           "description": "By clicking SIGN UP, you agree to receive marketing text messages from Omnilux LED at the number provided, including messages sent by autodialer. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy and Terms of Service.",
-          "image_url": "shopify:\/\/shop_images\/logo_transparent.png"
+          "image_url": "shopify://shop_images/logo_transparent.png"
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -357,11 +350,8 @@
               }
             }
           },
-          "block_order": [
-            "announcement-bar-0"
-          ],
-          "settings": {
-          }
+          "block_order": ["announcement-bar-0"],
+          "settings": {}
         },
         "header": {
           "type": "header",
@@ -396,15 +386,11 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          "block_order": ["footer-0", "footer-1", "footer-2"],
           "settings": {
             "color_scheme": "background-1",
             "newsletter_enable": true,
