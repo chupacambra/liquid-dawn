@@ -1,78 +1,32 @@
-<style>
+{% assign reverse = "" -%}
+{% assign padding = "-left" -%}
 
-  .btn {
-    background-color: transparent;
-    border: 1px solid black;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .btn:hover {
-    background-color: black;
-    color: white;
-  }
-
-  h1 {
-    font-size: 5.5rem;
-    font-weight: 300;
-    margin-bottom: 3%;
-  }
-  h2 {
-    font-size: 4rem;
-    font-weight: 300;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-  span {
-    font-style: italic;
-    font-weight: 100;
-  }
-  .column-border {
-    margin: 50px 0;
-    border-top: 1px solid black;
-  }
-  p {
-    margin-top: ;
-    font-size: 2rem;
-  }
-  .custom-div {
-    margin-left: 10%;
-  }
-</style>
-
-<section class="column-border" id="{{ section.id }}">
+<section id="{{ section.id }}" style="{{- section.settings.section_border -}};">
   <div class="container-fluid">
-    <div class="row d-flex">
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
-        <div>
-          <h2>“I want plumper, younger-looking skin”</h2>
-          <p>Omnilux Contour™ red and near-infrared LED devices reduce fine lines, wrinkles, and the appearance of pigmentation and redness, while restoring a healthy, youthful glow.</p>
-          <div class="btn">SHOP ALL</div>
+
+    {%- if section.settings.reverse == true -%}
+      {%- assign reverse = "-reverse" -%}
+      {%- assign padding = "-right" -%}
+    {%- endif -%}
+
+    <div class="row d-flex d-column flex-row{{ reverse }} px-md-0">
+      <div class="col-12 col-xl-6 d-flex flex-column text-center text-xl-start justify-content-center custom-padding{{ padding }}">
+        <!-- 1st Column-->
+        <div class="py-5 my-5 px-5">
+          <h2 class="mt-0 h1">{{ section.settings.heading }}</h2>
+          <p>{{ section.settings.subheading }}</p>
+          <div class="masks-btn ">{{ section.settings.btn_text }}</div>
         </div>
       </div>
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
-        <img class="img-fluid" loading="lazy" src="{{ section.settings.image_variant1 | image_url: width: 2400, height: 2400 }}">
-      </div>
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
-        <img class="img-fluid" loading="lazy" src="{{ section.settings.image_variant2 | image_url: width: 2400, height: 2400 }}">
-      </div>
-      <div style="padding: 0px;" class="col-12 d-flex flex-column col-md-6 col-lg-6 justify-content-center">
-        <div class="custom-div">
-          <h2>Trusted and used by dermatologists worldwide</h2>
-          <p>Omnilux is recognized as the world leader in medical-grade LED light therapy devices. For the first time, there are now home-use devices based on Omnilux’s proven, professional-grade technology.</p>
-          <div class="btn">SHOP ALL</div>
-        </div>
+      <div class="col-12 col-xl-6 d-flex flex-column px-0">
+        <img
+          class="img-fluid"
+          loading="lazy"
+          src="{{ section.settings.image | image_url }}">
       </div>
     </div>
   </div>
+  <!--2nd Row-->
 </section>
 
 {% schema %}
@@ -84,30 +38,50 @@
         "content": "General settings"
       },
       {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background color",
-        "default": "#eae6da"
+        "type": "checkbox",
+        "id": "reverse",
+        "label": "Reverse",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "section_border",
+        "label": "Section Border",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          }, {
+            "value": "border-top: 1px solid black",
+            "label": "Top"
+          }, {
+            "value": "border-bottom: 1px solid black",
+            "label": "Bottom"
+          }
+        ],
+        "default": ""
       },
       {
         "type": "text",
         "id": "heading",
         "label": "Heading",
         "info": "Leave empty to disable",
-        "default": "How it works?"
-      },
-      {
+        "default": "Trusted and used by dermatologists worldwide?"
+      }, {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
-        "info": "Leave empty to disable"
+        "info": "Leave empty to disable",
+        "default": "Omnilux is recognized as the world leader in medical-grade LED light therapy devices. For the first time, there are now home-use devices based on Omnilux’s proven, professional-grade technology."
+      }, {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "info": "Leave empty to disable",
+        "default": "SHOP ALL"
       }, {
         "type": "image_picker",
-        "id": "image_variant1",
-        "label": "Image"
-      }, {
-        "type": "image_picker",
-        "id": "image_variant2",
+        "id": "image",
         "label": "Image"
       }
     ],

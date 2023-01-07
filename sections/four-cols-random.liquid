@@ -1,80 +1,44 @@
-<style>
-  .btn {
-    background-color: transparent;
-    border: 1px solid black;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .btn:hover {
-    background-color: black;
-    color: white;
-  }
-
-  h1 {
-    font-size: 5.5rem;
-    font-weight: 300;
-    margin-bottom: 3%;
-  }
-  h2 {
-    font-size: 4rem;
-    font-weight: 300;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-  span {
-    font-style: italic;
-    font-weight: 100;
-  }
-  .column-border {
-    margin: 50px 0;
-    border-top: 1px solid black;
-  }
-  p {
-    margin-top: ;
-    font-size: 2rem;
-  }
-  .custom-div {
-    margin-left: 10%;
-  }
-</style>
-
-<section class="column-border" id="{{ section.id }}" style="background: linear-gradient(90deg, rgba(204,209,225,1) 0%, rgba(243,241,242,1) 34%);">
+<section class="column-border masks-section-padding pink-gradient " id="{{ section.id }}">
   <div class="container justify-content-center">
     <!-- HEADER -->
-    <div class="g-5 row justify-content-center py-5 px-5">
-      <div class="col-6 text-center">
-        <h1>Get professional results at home</h1>
-        <p>Designed with the same optimized energy output and wavelengths of light as our gold-standard Omnilux Medical professional devices, you get professional results in a single, 10-minute treatment session, at a fraction of the cost.</p>
+    {%- unless section.settings.heading == "" and section.settings.subheading == "" -%}
+      <div class="g-5 row justify-content-center pb-5 px-5">
+        <div class="col-12 col-lg-10 col-xl-8 text-center">
+          <h1 class="mt-0">{{ section.settings.heading }}</h1>
+          <p>{{ section.settings.subheading }}</p>
+        </div>
       </div>
-    </div>
+    {%- endunless -%}
+
     <!-- COLS -->
-    <div class="g-5 row justify-content-center py-5 px-5">
-      {% for block in section.blocks %}
-        {% assign my_variable = forloop.index0 | modulo:2 %}
-        {%- if my_variable  == 0 -%}
-          <div class="col-4">
-            <img class="img-fluid" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
+
+    {%- unless section.blocks.size == 0 -%}
+
+      <div class="g-5 row d-flex justify-content-center py-5 px-5">
+        {% for block in section.blocks %}
+          {% assign column = forloop.index0 | modulo: 2 %}
+          {% assign small_icon_padding = forloop.index0 | plus: 2 %}
+          {% assign column_width = "col-12 col-4 col-lg-2" %}
+
+          {%- if column == 0 -%}
+            {%- assign column_width = "col-12 col-sm-8 col-lg-4" -%}
+          {%- endif -%}
+
+          <div class="{{ column_width }} text-center">
+            <img
+              class="img-fluid pt-4 pt-md-{{ small_icon_padding }}"
+              loading="lazy"
+              src="{{ block.settings.image_url | img_url:"grande" }} ">
           </div>
-        {%- else -%}
-          <div class="col-2">
-            <img class="img-fluid" loading="lazy" src="{{ block.settings.image_url | image_url: width: 2400, height: 2400 }} ">
-          </div>
-        {%- endif -%}
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
+    {%- endunless -%}
+
+
     <!-- BUTTON -->
-    <div class="g-5 row justify-content-center py-5 px-5">
-      <div>
-        <div class="btn">SHOP ALL</div>
+    <div class="g-5 row justify-content-center mt-5">
+      <div class="masks-btn">
+        {{ section.settings.btn_text }}
       </div>
     </div>
   </div>
@@ -89,21 +53,23 @@
         "type": "header",
         "content": "General settings"
       }, {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background color",
-        "default": "#eae6da"
-      }, {
         "type": "text",
         "id": "heading",
         "label": "Heading",
         "info": "Leave empty to disable",
-        "default": "How it works?"
+        "default": "Get professional results at home"
       }, {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
-        "info": "Leave empty to disable"
+        "info": "Leave empty to disable",
+        "default": "Designed with the same optimized energy output and wavelengths of light as our gold-standard Omnilux Medical professional devices, you get professional results in a single, 10-minute treatment session, at a fraction of the cost."
+      }, {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "info": "Leave empty to disable",
+        "default": "SEE OUR PROVEN RESULTS"
       }
     ],
     "presets": [

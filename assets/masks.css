@@ -1,0 +1,389 @@
+/* GENERAL */
+.object-fit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.object-fit.--cover {
+  object-fit: cover;
+}
+
+.object-fit.--contain {
+  object-fit: contain;
+}
+
+.masks-section-padding {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.subsection-margin {
+  margin: 3vh;
+}
+
+.column-border {
+  border-top: 1px solid black;
+}
+
+/* Gradients */
+
+.blue-gradient {
+  background: linear-gradient(
+    301deg,
+    rgba(181, 193, 219, 1) 15%,
+    rgba(255, 255, 255, 1) 86%
+  );
+}
+
+.pink-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(245, 211, 189, 1) 100%
+  );
+}
+
+/* Typography */
+.header span {
+  font-style: normal !important;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-weight: 300;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+span {
+  font-style: italic;
+  font-weight: 100;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #262626;
+  font-weight: 100;
+  line-height: 2.5rem;
+}
+
+.svg-demo:before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_one_200x.png?v=1670320881');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  margin-right: 5px;
+}
+
+.svg-demo::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0678/3392/1849/files/quoteation_mark_one_200x.png?v=1670320881');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  transform: rotate(-180deg);
+}
+/* Buttons */
+.masks-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  color: #262626;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: auto;
+  margin-top: 3vh;
+}
+
+.masks-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.masks-btn-white {
+  border: 1px solid white;
+  color: white;
+}
+
+.masks-btn-white:hover {
+  background: white;
+  color: black;
+}
+
+/* SECTIONS */
+
+/* Header */
+.header-wrapper {
+  background: linear-gradient(
+    301deg,
+    rgba(181, 193, 219, 1) 15%,
+    rgba(255, 255, 255, 1) 86%
+  );
+}
+
+/* Video */
+.video-hero {
+  width: 100%;
+  height: 100vh;
+}
+
+.video-heading {
+  margin-top: 25vh;
+}
+
+.richtext-h1 > p {
+  font-size: 7rem;
+  color: white;
+  line-height: 7.5rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.richtext-h1 > p > em {
+  font-weight: 100;
+}
+
+.richtext-h3 > p {
+  font-size: 3rem;
+  color: white;
+  line-height: 3.5rem;
+}
+
+.video-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 5 cols Icons */
+.richtext-h2 > p {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+}
+
+/* Slider1 */
+.swiper-container {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.swiper-slide {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+}
+
+.projectInfo {
+  position: relative;
+  margin: 14px 0 13px;
+  position: relative;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.projectInfo .medium {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  font-style: italic;
+  padding: 0 7px 1px;
+}
+
+.thumbContainer,
+.thumbContainer {
+  opacity: 1;
+  padding: 2vh 3vh 2vh 3vh;
+}
+
+.thumbContainer img {
+  display: block;
+  width: 120px;
+}
+
+/* 3 COLS UNEVEN SECTION */
+.column-border {
+  border-top: 1px solid black;
+}
+
+.h1 > p {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+/* 2 cols full */
+.custom-margin-left {
+  margin-left: 10%;
+}
+
+.custom-margin-right {
+  margin-right: 10%;
+}
+
+.custom-padding-left {
+  padding-right: 5vw;
+  padding-left: 2vw;
+}
+
+.custom-padding-right {
+  padding-left: 5vw;
+  padding-right: 2vw;
+}
+
+/* Slider2 */
+.swiper-column {
+  width: 18vw;
+  padding: 8vh 2vh;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.swiper2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-btn {
+  background-color: transparent;
+  border: 1px solid #a3988a;
+  color: 1px solid #a3988a;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: auto;
+  margin-top: 3vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+.slider-btn:hover {
+  background-color: black;
+  color: white;
+  width: auto;
+}
+
+.swiper-column h3 {
+  font-weight: 600;
+}
+
+.slider-pink-border {
+  border-bottom: 1px solid #a3988a;
+  border-top: 1px solid #a3988a;
+}
+
+.slider2-border-right {
+  border-right: 1px solid #a3988a;
+}
+
+@media only screen and (max-width: 1200px) {
+  .swiper-column {
+    width: 30vw;
+  }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 960px) {
+  .masks-section-padding {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+
+  .richtext-h1 > p {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    margin-bottom: 0;
+  }
+
+  .video-heading {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 3%;
+    margin-bottom: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .masks-btn {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .swiper-column {
+    width: 45vw;
+  }
+
+  .custom-padding-left {
+    padding: 0;
+  }
+
+  .custom-padding-right {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-column {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .swiper-column {
+    width: 88vw;
+  }
+}

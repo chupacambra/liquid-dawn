@@ -1,5 +1,8 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper1 = new Swiper('.swiper1', {
   loop: true,
+  autoplay: {
+    delay: 2000,
+  },
   slidesPerView: 'auto',
   freeMode: true,
   mousewheel: {
@@ -7,10 +10,30 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-var thumb = document.querySelectorAll('.thumbContainer');
+var swiper2 = new Swiper('.swiper2', {
+  loop: true,
 
-thumb.forEach(function (image, index) {
-  var delay = index * 90;
-  image.classList.add('fadeInSlide');
-  image.style.animationDelay = delay + 'ms';
+  slidesPerView: 'auto',
+  freeMode: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  paginationClickable: true,
+  navigation: {
+    nextEl: '.swiper-button-next ',
+    prevEl: '.swiper-button-prev ',
+  },
 });
+
+document.getElementById('slider-btn-next').addEventListener('click', prevSlide);
+document.getElementById('slider-btn-prev').addEventListener('click', nextSlide);
+
+function nextSlide(e) {
+  e.preventDefault();
+  swiper2.slideNext();
+}
+
+function prevSlide(e) {
+  e.preventDefault();
+  swiper2.slidePrev();
+}
