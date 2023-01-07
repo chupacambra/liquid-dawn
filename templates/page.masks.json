@@ -1,0 +1,310 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "b785b9c4-4efc-45c0-8380-944e8232503f": {
+      "type": "header-video-section",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": ""
+      }
+    },
+    "89820711-8f00-4aab-acf4-e82d77d0381f": {
+      "type": "five-cols-and-icons",
+      "blocks": {
+        "bda463b7-afe0-4ef8-8d03-b31c62b475ea": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Icon_5.png"
+          }
+        },
+        "28c93b29-bea0-4f41-bb60-2f480601a221": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Icon_4.png"
+          }
+        },
+        "f30a2c53-e393-456c-a428-215f4fa370d2": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Icon_1.png"
+          }
+        },
+        "1168b3db-206c-4f99-9903-54c0e9320467": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Icon_1.png"
+          }
+        },
+        "6b3c244b-0461-4ae5-9993-bfc51e898b47": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Icon_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "bda463b7-afe0-4ef8-8d03-b31c62b475ea",
+        "28c93b29-bea0-4f41-bb60-2f480601a221",
+        "f30a2c53-e393-456c-a428-215f4fa370d2",
+        "1168b3db-206c-4f99-9903-54c0e9320467",
+        "6b3c244b-0461-4ae5-9993-bfc51e898b47"
+      ],
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": ""
+      }
+    },
+    "05838ccb-7db5-4a17-829c-3a43b5da045e": {
+      "type": "three-cols-mixed",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": "",
+        "image_main": "shopify:\/\/shop_images\/mask_two_74061893-c0e8-4b31-b9f4-2d3b3b106f60.png",
+        "image_small_one": "shopify:\/\/shop_images\/mask_one.png",
+        "image_small_two": "shopify:\/\/shop_images\/mask_one.png"
+      }
+    },
+    "dc68df97-9a2b-4d85-b116-03e9d5c32ee2": {
+      "type": "slideshow",
+      "blocks": {
+        "4ad27ebc-3676-4c73-8312-5c0160c7ccd9": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/WH_Logo.png"
+          }
+        },
+        "f0cad22b-8b76-41b9-8b0a-ecf5faa88d5c": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/layer1.png"
+          }
+        },
+        "52d687ed-0932-48d1-a0f9-f4cce23d00f0": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Marie_Claire_Magazine_logo.png"
+          }
+        },
+        "8b4615d9-2b95-490f-b129-c69b5a84af19": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Allure_logo.png"
+          }
+        },
+        "3c80d0c7-2134-4cf6-9ea0-78ecf57b36f8": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/layer1-1.png"
+          }
+        },
+        "a49f503f-57b6-4bd8-8aeb-1c3862f1c247": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Today_logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "4ad27ebc-3676-4c73-8312-5c0160c7ccd9",
+        "f0cad22b-8b76-41b9-8b0a-ecf5faa88d5c",
+        "52d687ed-0932-48d1-a0f9-f4cce23d00f0",
+        "8b4615d9-2b95-490f-b129-c69b5a84af19",
+        "3c80d0c7-2134-4cf6-9ea0-78ecf57b36f8",
+        "a49f503f-57b6-4bd8-8aeb-1c3862f1c247"
+      ],
+      "settings": {
+        "bg_color": "#79725d",
+        "heading": "How it works?",
+        "subheading": ""
+      }
+    },
+    "0c290895-9116-4ffc-b966-eaeff0679ced": {
+      "type": "three-cols-standard",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": "",
+        "image_product1": "shopify:\/\/shop_images\/face_one.png",
+        "image_product2": "shopify:\/\/shop_images\/face_two.png"
+      }
+    },
+    "2213c7cc-02a9-4ba8-b579-4d52b0da1d18": {
+      "type": "four-cols-standard",
+      "blocks": {
+        "fce87277-e71e-471c-ae94-3abda210e84c": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
+          }
+        },
+        "2818a6aa-10b6-44f1-b5ee-c8314d496359": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
+          }
+        },
+        "5110fea9-19b4-476a-84f4-b293ecd4aa87": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
+          }
+        },
+        "a305da81-2623-4091-a28f-5edc9576e8ad": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/badgeself_0700e106-cf48-4647-bcdc-867aa67e1f84.png"
+          }
+        }
+      },
+      "block_order": [
+        "fce87277-e71e-471c-ae94-3abda210e84c",
+        "2818a6aa-10b6-44f1-b5ee-c8314d496359",
+        "5110fea9-19b4-476a-84f4-b293ecd4aa87",
+        "a305da81-2623-4091-a28f-5edc9576e8ad"
+      ],
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": ""
+      }
+    },
+    "c4b13a1b-2959-479b-b899-edc3a7cd7179": {
+      "type": "two-cols-container",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": "",
+        "image": "shopify:\/\/shop_images\/Mask_Group_3_2fd1a29c-d3ac-490d-b0bd-215941342679.png"
+      }
+    },
+    "f9555507-e87b-494a-a0a2-157fc7861cd4": {
+      "type": "four-cols-random",
+      "blocks": {
+        "09572256-6bdd-40e2-86a3-9f53ff025dfd": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Omnilux_Product_16.png"
+          }
+        },
+        "c1372112-11dd-4f48-a2a3-9b20b01175a0": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/OMNILUX_4_05478.png"
+          }
+        },
+        "0aa1353b-2a5f-4e92-bafc-fab0e4919c34": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Omnilux_Product.png"
+          }
+        },
+        "2938c9da-3e13-473a-be66-7507718afcdb": {
+          "type": "content",
+          "settings": {
+            "icon": "",
+            "heading": "",
+            "text": "",
+            "image_url": "shopify:\/\/shop_images\/Omnilux_Product_46.png"
+          }
+        }
+      },
+      "block_order": [
+        "09572256-6bdd-40e2-86a3-9f53ff025dfd",
+        "c1372112-11dd-4f48-a2a3-9b20b01175a0",
+        "0aa1353b-2a5f-4e92-bafc-fab0e4919c34",
+        "2938c9da-3e13-473a-be66-7507718afcdb"
+      ],
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": ""
+      }
+    },
+    "609ceb0f-562a-4573-b52d-b743992760d2": {
+      "type": "two-cols-full",
+      "settings": {
+        "bg_color": "#eae6da",
+        "heading": "How it works?",
+        "subheading": "",
+        "image_variant1": "shopify:\/\/shop_images\/product_variant2.png",
+        "image_variant2": "shopify:\/\/shop_images\/product_variant_41120eaf-e6c5-47ec-8193-23297ae02457.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b785b9c4-4efc-45c0-8380-944e8232503f",
+    "89820711-8f00-4aab-acf4-e82d77d0381f",
+    "05838ccb-7db5-4a17-829c-3a43b5da045e",
+    "dc68df97-9a2b-4d85-b116-03e9d5c32ee2",
+    "0c290895-9116-4ffc-b966-eaeff0679ced",
+    "2213c7cc-02a9-4ba8-b579-4d52b0da1d18",
+    "c4b13a1b-2959-479b-b899-edc3a7cd7179",
+    "f9555507-e87b-494a-a0a2-157fc7861cd4",
+    "609ceb0f-562a-4573-b52d-b743992760d2"
+  ]
+}
